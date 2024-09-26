@@ -283,6 +283,7 @@ input, select, textarea {
 			margin: 3em 0;
 		}
 
+
 	.align-left {
 		text-align: left;
 	}
@@ -3950,3 +3951,4 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+	
