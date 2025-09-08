@@ -47,76 +47,92 @@
 
 
 						<!-- Two -->
+							
 							<section id="two" class="spotlights">
-								<section>
-									
-									<img src="images/chesswin.PNG" height = "480" width="610" alt="" data-position="center center" />
+								<!-- Wander Sync (FIRST PROJECT) -->
+								<section> 
+									<img src="images/wandersync.jpg" width="600" height="450" alt="Wander Sync App Screenshot" data-position="center center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Wander Sync</h3>
+											</header>
+											<p>
+												Using <strong>agile coding principles</strong> and model, view, viewmodel architecture, I led a team to create
+												a mobile app that helps users create synchronized schedules. Using <strong>Firebase</strong> as the back end for
+												storing sensitive data, we developed the app from scratch, starting all the front end and back end features. Users can
+												add other users to their trips when scheduling, and it would automatically create the changes on both parties' ends. 
+												Throughout this 5 month project, I learned mobile app developement using <strong>Android Studio</strong> and collaboration
+												with a team. Along with the coding, we created <strong>user diagrams</strong> that showed the data transfer from firebase into what the user 
+												sees on the screen. 
+											</p>
+										</div>
+									</div>
+								</section>
+
+								<!-- Chess Engine -->
+								<section> 
+									<img src="images/chesswin.PNG" height="480" width="610" alt="Chess Engine Screenshot" data-position="center center" />
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>Chess Engine</h3>
 											</header>
 											<p>
-												I created an AI that would play a game of chess. 
-												The AI is trained to learn to calculate the best position 5 depths in based on the parameters 
-												I have asked it to check. The image is one of the games I played, as white, against my own AI.
-												Simultaneously, my app will print out the notation of the pieces up to the first 58 moves on both 
-												sides so that players can track their moves. This engine has proved to be around an estimated ELO 
-												of 823. I tried and tested the ELO against chess.com bots to get an accurate approximation of the ELO.
-												One of the key algorithms used in the development of this engine is the alpha-beta pruning algorithm, 
-												which reduced my "thinking time" by 150%. To further improve this engine, the best plan of action would
-												be to track each game, and reanalyze such that it can learn at which move did the evaluation go against it,
-												so that it can learn from its mistakes and slowly fine tune itself.
+												I created an <strong>AI chess engine</strong> that plays full games of chess.  
+												The AI is trained to calculate the <strong>best position up to 5 moves deep</strong> based on specific evaluation parameters.  
+												My app also prints the <strong>chess notation</strong> for the first 58 moves on both sides, allowing players to track games.  
+												Through testing against <strong>Chess.com bots</strong>, I estimated the engine's strength to be around an <strong>ELO of 823</strong>.  
+												A key algorithm used in this engine is <strong>alpha-beta pruning</strong>, which reduced the engine’s “thinking time” by <strong>150%</strong>.  
+												Future improvements include implementing a <strong>self-learning mechanism</strong> that analyzes games to identify mistakes 
+												and fine-tune the evaluation function.
 											</p>
 										</div>
 									</div>
 								</section>
-								<section>
-									
-									<img src="images/housingimage.jfif"  height="400" width="600" data-position="top center" />
-									
+
+								<!-- House Price Estimator -->
+								<section> 
+									<img src="images/housingimage.jfif"  height="400" width="600" alt="House Price Estimator" data-position="top center" />
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>House Price estimator</h3>
+												<h3>House Price Estimator</h3>
 											</header>
 											<p>
-												Using python jupyter Notebooks and kaggle, I trained a model that would predict the house value 
-												of a property in California, given some parameters. The model takes into account the proximity to 
-												water, amount of bedrooms and other factors when calculating the value. This project is an introduction
-												to model training as I have an interest in Machine Learning and using predictive AI to impact the future.
-												The model currently runs at an 87% accuracy and uses Python modules like scikitlearn to evaluate and analyze 
-												the features. 
+												Using <strong>Python</strong>, <strong>Jupyter Notebooks</strong>, and <strong>Kaggle datasets</strong>,  
+												I trained a model to predict the <strong>house value</strong> of properties in California given factors such as  
+												<strong>proximity to water</strong>, number of <strong>bedrooms</strong>, and other features.  
+												This project served as an introduction to <strong>machine learning</strong> and <strong>predictive modeling</strong>, 
+												reflecting my interest in <strong>AI</strong> applications.  
+												The model achieves an <strong>87% accuracy</strong> and leverages <strong>scikit-learn</strong> for feature evaluation and analysis.
 											</p>
-											<ul class="actions">
-											</ul>
 										</div>
 									</div>
 								</section>
-								<section>
-									
-									<img src="images/soccer.jfif" width="500" height="450" alt="" data-position="25% 25%" />
-									
+
+								<!-- Football Weather API -->
+								<section> 
+									<img src="images/soccer.jfif" width="600" height="450" alt="Football Weather API Screenshot" data-position="25% 25%" />
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>Football Weather API</h3>
 											</header>
 											<p>
-												Using a football API, which returns the complete league table of an indicated year, and a weather API,
-												 my app returs the standings of a selected year. Then, using that response, it will return the city 
-												 which hosts the first place team of that league and returns a full analysis of the current weather 
-												 of that city. The app uses a dropdown menu of the top 5 soccer leagues in Europe: English Premier League,
-												 Ligue 1, Bundesliga, La Liga, and Serie A and another menu of the years from 2012-2022. Once those selections
-												 have been made, then the football API will retrieve the league standings of the specified league at the 
-												 specified year. After doing so, it will use the weather API to return the current weather of the area of where
-												 the city is located. 
+												I built an app that combines data from a <strong>football API</strong> and a <strong>weather API</strong>  
+												to connect sports and real-world conditions.  
+												Users select from the top <strong>5 European leagues</strong> (English Premier League, Ligue 1, Bundesliga, La Liga, Serie A)  
+												and a year from <strong>2012–2022</strong>.  
+												The app retrieves the <strong>league standings</strong> and identifies the <strong>first-place team’s city</strong>,  
+												then calls the weather API to provide a <strong>live weather analysis</strong> for that city.  
+												This project demonstrates skills in <strong>RESTful API integration</strong>, data handling, and interactive user input.
 											</p>
-											
 										</div>
 									</div>
 								</section>
 							</section>
+
 
 						
 
