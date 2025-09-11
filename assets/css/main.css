@@ -3970,3 +3970,10 @@ input, select, textarea {
   margin: 0;  /* remove extra spacing */
 }
 
+.gt {
+  background: linear-gradient(90deg, #B3A369, #E6C87E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2rem;
+}
