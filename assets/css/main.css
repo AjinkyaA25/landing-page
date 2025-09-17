@@ -3975,13 +3975,14 @@ input, select, textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .bio {
   text-transform: none !important;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2rem;
   line-height: 1.6;
   letter-spacing: 0.5px; /* subtle spacing makes it look sleek */
 }
+
