@@ -4036,6 +4036,11 @@ input, select, textarea {
   margin-bottom: 1em;
 }
 
+.booking-followup .actions {
+  justify-content: center;
+  margin-left: 0;
+}
+
 #banner header.major > p.banner-handles {
   font-size: 1.6em;
   font-weight: 600;
@@ -4172,7 +4177,23 @@ body.coaching-page #main {
   margin-bottom: 1em;
 }
 
-#pricing .features > section p:last-child {
+#pricing .features > section ul {
+  list-style: disc outside;
+  padding-left: 1.25em;
+  margin-bottom: 1em;
+}
+
+#pricing .features > section li {
+  margin-bottom: 0.5em;
+  padding-left: 0.25em;
+}
+
+#pricing .features > section li:last-child {
+  margin-bottom: 0;
+}
+
+#pricing .features > section p:last-child,
+#pricing .features > section ul:last-child {
   margin-bottom: 0;
 }
 
