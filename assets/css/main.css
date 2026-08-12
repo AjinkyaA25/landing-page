@@ -3986,3 +3986,260 @@ input, select, textarea {
   letter-spacing: 0.5px; /* subtle spacing makes it look sleek */
 }
 
+/* Coaching Page */
+#booking .inner,
+#payment .inner {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.payment-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
+  margin-top: 1.5em;
+}
+
+.payment-method {
+  flex: 1 1 220px;
+  max-width: 260px;
+}
+
+.payment-method img {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.5em;
+}
+
+.booking-embed {
+  max-width: 800px;
+  margin: 1.5em auto 0;
+}
+
+.booking-embed iframe {
+  width: 100%;
+  height: 700px;
+  border: 0;
+}
+
+.booking-followup {
+  max-width: 800px;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.booking-followup p {
+  margin-bottom: 1em;
+}
+
+/* Coaching Page — Dune theme */
+body.coaching-page #wrapper {
+  background-image: url("../../images/dune_uprising.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.coaching-page #main {
+  background-color: rgba(42, 47, 74, 0.93);
+}
+
+/* Spotlight images used without the .image wrapper span (bare <img>, or <a><img></a>,
+   as a direct child of the section) — fill the column instead of rendering at the
+   raw width/height attributes like a plain inline image. The width has to be set on
+   whichever element is the actual flex item (the <a>, when present) — a percentage
+   width on the inner <img> alone resolves against the <a>'s auto/shrink-to-fit width,
+   which is circular and renders as a tiny image. */
+.spotlights > section > img,
+.spotlights > section > a {
+  display: block;
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.spotlights > section > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1680px) {
+  .spotlights > section > img,
+  .spotlights > section > a {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .spotlights > section > img,
+  .spotlights > section > a {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .spotlights > section > img,
+  .spotlights > section > a {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+/* Coaching page — pricing tiers ("wrapper style1" / "features" are unused
+   HTML5 UP classes not present in this site's compiled CSS, so style them directly). */
+#pricing .features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 736px) {
+  #pricing .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+#pricing .features > section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2em;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#pricing .features > section.linked {
+  padding: 0;
+}
+
+#pricing .features > section.linked > a,
+#pricing .features > section.linked > button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 2em;
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: inherit;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: normal;
+  line-height: normal;
+  font: inherit;
+  cursor: pointer;
+}
+
+#pricing .features > section.linked:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(224, 176, 75, 0.5);
+}
+
+#pricing .features > section h3 {
+  color: #e0b04b;
+  margin-bottom: 0.75em;
+}
+
+#pricing .features > section p {
+  margin-bottom: 1em;
+}
+
+#pricing .features > section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Starter Package modals */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 24, 0.75);
+  z-index: 1000;
+  padding: 2em 1em;
+  overflow-y: auto;
+}
+
+.modal-overlay.active {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal-box {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  background: #242943;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 2.5em;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-box h3 {
+  color: #e0b04b;
+  margin-bottom: 0.5em;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 2.25em;
+  height: 2.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  color: inherit;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: normal;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.08);
+}
+
+.package-summary {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  margin: 1.5em 0;
+}
+
+.package-summary ul {
+  margin: 0.75em 0 0 0;
+  padding-left: 1.25em;
+}
+
+.package-summary li {
+  margin-bottom: 0.5em;
+}
+
