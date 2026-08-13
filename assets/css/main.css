@@ -4192,6 +4192,19 @@ body.coaching-page #main {
   margin-bottom: 0;
 }
 
+#pricing .features > section .actions {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  justify-content: center;
+}
+
+#pricing .features > section .actions li {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 #pricing .features > section p:last-child,
 #pricing .features > section ul:last-child {
   margin-bottom: 0;

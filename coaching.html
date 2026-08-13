@@ -1,462 +1,1112 @@
-﻿<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6136429047446836" crossorigin="anonymous"></script>
-		<title>Coaching</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=4" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Booking embed — make the widget pop off the dark page background */
-			#booking .booking-embed {
-				position: relative;
-				max-width: 900px;
-				margin: 2em auto 0;
-				background: #ffffff;
-				border-radius: 18px;
-				padding: 6px;
-				box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06);
-			}
-			#booking .booking-embed::before {
-				content: "";
-				display: block;
-				height: 6px;
-				border-radius: 6px 6px 0 0;
-				background: linear-gradient(90deg, #e0b04b, #c46a3c);
-				margin-bottom: 6px;
-			}
-			#booking .booking-embed iframe {
-				display: block;
-				width: 100%;
-				height: 720px;
-				border: none;
-				border-radius: 0 0 12px 12px;
-			}
-			@media screen and (max-width: 736px) {
-				#booking .booking-embed iframe {
-					height: 900px;
-				}
-			}
-		</style>
-	</head>
-	<body class="is-preload coaching-page">
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dune: Imperium strategy coaching for Uprising, Bloodlines, Conspiracy, homebrew formats, and competitive play." />
+    <title>Dune: Imperium Strategy Coaching | Ajinkya Argonda</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6136429047446836" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css?v=5" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <style>
+        :root {
+            --dune-night: #070b12;
+            --dune-navy: #0b1320;
+            --dune-panel: #101b29;
+            --dune-panel-2: #152333;
+            --dune-gold: #e0b04b;
+            --dune-gold-light: #f4d486;
+            --dune-orange: #c46a3c;
+            --dune-sand: #e8dcc4;
+            --dune-muted: #aab4c0;
+            --dune-line: rgba(224,176,75,.24);
+        }
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Home</strong></a>
-					</header>
+        body.coaching-page {
+            background:
+                radial-gradient(circle at 20% 10%, rgba(196,106,60,.12), transparent 28%),
+                radial-gradient(circle at 80% 25%, rgba(224,176,75,.09), transparent 24%),
+                linear-gradient(180deg, #060a10 0%, #0a111b 42%, #070b12 100%);
+            color: var(--dune-sand);
+        }
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner">
-						<div class="inner">
-							<span class="image">
-								<img src="images/tourney.jfif" height="100" alt="Banner" />
-							</span>
-							<header class="major">
-								<h1>Dune: Imperium Coaching</h1>
-								<p class="banner-handles">Dinosaur11 &middot; Consules</p>
-							</header>
-							<ul class="actions">
-								<li><a href="#booking" class="button primary scrolly">Book a Session</a></li>
-							</ul>
-						</div>
-					</section>
+        body.coaching-page::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: .15;
+            background-image:
+                radial-gradient(circle at 12% 25%, rgba(255,255,255,.8) 0 1px, transparent 1.5px),
+                radial-gradient(circle at 74% 18%, rgba(255,255,255,.65) 0 1px, transparent 1.5px),
+                radial-gradient(circle at 43% 72%, rgba(255,255,255,.55) 0 1px, transparent 1.5px);
+            background-size: 220px 220px, 310px 310px, 270px 270px;
+            z-index: 0;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        #wrapper, #header, #banner { position: relative; z-index: 1; }
 
-						<!-- Coaching info -->
-							<section id="coaching-info" class="spotlights">
-								<section>
-									<img src="images/dune_coaching.png" width="600" height="400" alt="Dune Imperium Coaching" data-position="center center" />
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>About Your Coach</h3>
-											</header>
-											<p>
-												Ajinkya Argonda runs close to a <strong>65% win rate</strong> in Dune: Imperium – Uprising
-												(around 45% across the base game and other expansions), and placed <strong>4th</strong>
-												in one of the biggest events in the community, the <strong>MrBeast Dune: Imperium Invitational</strong>.
-												He also runs a <strong><a href="https://youtube.com/@consules?si=QPJ7EDrA0RvHNK1y" target="_blank">YouTube channel</a></strong> where he breaks down gameplay and strategy for
-												players getting into the game.
-											</p>
-											<p>
-												A lot of coaching out there is aimed at players who are already strong and chasing
-												tournament wins. That's not who he coaches. He works with <strong>beginner-to-intermediate
-												players</strong> — people who know the rules but keep losing to the same
-												deck-building mistakes, misread intrigue timing, or just don't yet see the board the
-												way stronger players do. If that's you, he can close that gap a lot faster than
-												trial and error will.
-											</p>
-										</div>
-									</div>
-								</section>
-							</section>
+        #header.alt.style2 {
+            background: rgba(5, 9, 15, .88);
+            border-bottom: 1px solid var(--dune-line);
+            backdrop-filter: blur(8px);
+        }
 
-						<!-- Pricing tiers -->
-							<section id="pricing" class="wrapper style1">
-								<div class="inner">
-									<header class="major">
-										<h2>Coaching Options</h2>
-									</header>
-									<div class="features">
-										<section class="linked">
-											<a href="https://youtube.com/@consules?si=QPJ7EDrA0RvHNK1y" target="_blank">
-												<h3>Free — YouTube</h3>
-												<p>Not ready to book yet? Start with my channel:</p>
-												<ul>
-													<li>Gameplay walkthroughs and strategy guides</li>
-													<li>Built for new and improving players</li>
-													<li>No cost</li>
-												</ul>
-											</a>
-										</section>
-										<section class="linked">
-											<button type="button" onclick="openVodModal()">
-												<h3>VOD Review — $40</h3>
-												<p>Send me a recording of one of your games — a YouTube link, Google Drive, whatever's easiest. I'll commentate over it:</p>
-												<ul>
-													<li>Moves I'd reconsider</li>
-													<li>Strategy adjustments worth making going forward</li>
-													<li>Specific spots worth revisiting</li>
-												</ul>
-												<p><strong>Please allow at least 3 days</strong> for me to send your review back.</p>
-											</button>
-										</section>
-										<section class="linked">
-											<a href="#booking">
-												<h3>Single Session — $45</h3>
-												<ul>
-													<li><strong>Live Session:</strong> We join a game together over <strong>Discord</strong>
-													and I give live commentary on the specific moves as you play — good for
-													in-the-moment advice while a decision is actually in front of you.</li>
-													<li><strong>Coaching Session:</strong> A <strong>1-hour</strong> Discord call where we
-													go over specific principles — deck-building decisions, intrigue timing, and other
-													strategy concepts — without playing live.</li>
-												</ul>
-											</a>
-										</section>
-										<section class="linked">
-											<button type="button" onclick="openPackageModal()">
-												<h3>Starter Package — $100</h3>
-												<p>Best value if you're serious about improving:</p>
-												<ul>
-													<li><strong>30-minute screening call</strong> to find out exactly where your game is stuck</li>
-													<li>We talk through the best way forward — a <strong>live game</strong> or a more
-													<strong>teaching-focused strategy session</strong></li>
-													<li><strong>Two 1-hour coaching sessions</strong> built around what came up in the screening</li>
-												</ul>
-											</button>
-										</section>
-									</div>
-								</div>
-							</section>
+        #header .logo strong {
+            color: var(--dune-gold-light);
+            letter-spacing: .08em;
+        }
 
-						<!-- Booking -->
-							<section id="booking">
-								<div class="inner">
-									<header class="major">
-										<h2>Book a Session</h2>
-									</header>
-									<p>Pick a time that works for you — it'll go straight onto my calendar and you'll get a confirmation email.</p>
-									<div class="booking-embed">
-										<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3Bf2jUbc_E0Hn_WJDfb_12kDygMX-ZrwNxJyjRfTcDbdeRP7R72EDObgPPZo7nbOfF7FR089B7" title="Book a Dune Imperium Uprising coaching session" loading="lazy"></iframe>
-									</div>
-									<div class="booking-followup">
-										<p>Booked your time? Send payment before your session so it's confirmed.</p>
-										<ul class="actions">
-											<li><a href="#payment" class="button primary">Confirm &amp; Send Payment</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
+        #banner {
+            min-height: 610px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg, rgba(4,8,14,.94) 0%, rgba(4,8,14,.72) 48%, rgba(4,8,14,.36) 100%),
+                linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.52)),
+                url("images/tourney.jfif") center/cover no-repeat;
+            border-bottom: 1px solid var(--dune-line);
+        }
 
-						<!-- Payment -->
-							<section id="payment">
-								<div class="inner">
-									<header class="major">
-										<h2>Payment</h2>
-									</header>
-									<p>Please send payment via PayPal or Venmo prior to your session.</p>
-									<div class="payment-flex">
-										<div class="payment-method">
-											<h3>PayPal</h3>
-											<img src="images/paypal_qr.png" alt="PayPal QR Code" width="200" height="200" />
-											<p><a href="https://paypal.me/Consules" target="_blank">paypal.me/Consules</a></p>
-										</div>
-										<div class="payment-method">
-											<h3>Venmo</h3>
-											<img src="images/venmo_qr.png" alt="Venmo QR Code" width="200" height="200" />
-											<p><a href="https://venmo.com/u/Ajinkya-Argonda" target="_blank">@Ajinkya-Argonda</a></p>
-										</div>
-									</div>
-								</div>
-							</section>
+        #banner::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0;
+            height: 160px;
+            background: linear-gradient(transparent, var(--dune-night));
+        }
 
-					</div>
+        #banner .inner { position: relative; z-index: 2; max-width: 1050px; }
+        #banner .image { display: none; }
 
-				<!-- Starter Package modals -->
-					<div id="package-modal-overlay" class="modal-overlay" onclick="if (event.target === this) closePackageModal()">
-						<div class="modal-box">
-							<button type="button" class="modal-close" onclick="closePackageModal()" aria-label="Close">&times;</button>
-							<h3>Starter Package — Pick Your 3 Sessions</h3>
-							<p>A 30-minute screening call plus two 1-hour coaching sessions. Fill in your info and preferred time for all three — I'll confirm availability and get you on the calendar.</p>
-							<form id="package-form" onsubmit="return showPackageConfirmation(event)">
-								<div class="fields">
-									<div class="field half">
-										<label for="package-name">Name</label>
-										<input type="text" id="package-name" required />
-									</div>
-									<div class="field half">
-										<label for="package-email">Email</label>
-										<input type="email" id="package-email" required />
-									</div>
-									<div class="field">
-										<label for="package-discord">Discord Username</label>
-										<input type="text" id="package-discord" required />
-									</div>
-								</div>
-								<div class="fields">
-									<div class="field half">
-										<label for="s1-date">Session 1 — Screening (30 min) — Date</label>
-										<input type="date" id="s1-date" required />
-									</div>
-									<div class="field half">
-										<label for="s1-time">Session 1 — Time</label>
-										<input type="time" id="s1-time" required />
-									</div>
-									<div class="field half">
-										<label for="s2-date">Session 2 — Coaching (1 hr) — Date</label>
-										<input type="date" id="s2-date" required />
-									</div>
-									<div class="field half">
-										<label for="s2-time">Session 2 — Time</label>
-										<input type="time" id="s2-time" required />
-									</div>
-									<div class="field half">
-										<label for="s3-date">Session 3 — Coaching (1 hr) — Date</label>
-										<input type="date" id="s3-date" required />
-									</div>
-									<div class="field half">
-										<label for="s3-time">Session 3 — Time</label>
-										<input type="time" id="s3-time" required />
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Review & Confirm" class="primary" /></li>
-								</ul>
-							</form>
-						</div>
-					</div>
+        #banner h1 {
+            font-size: clamp(2.6rem, 6vw, 5.2rem);
+            line-height: .98;
+            text-transform: uppercase;
+            letter-spacing: .035em;
+            text-shadow: 0 8px 35px rgba(0,0,0,.8);
+        }
 
-					<div id="package-confirm-overlay" class="modal-overlay" onclick="if (event.target === this) closePackageConfirm()">
-						<div class="modal-box">
-							<button type="button" class="modal-close" onclick="closePackageConfirm()" aria-label="Close">&times;</button>
-							<h3>Confirm Your 3 Sessions</h3>
-							<p>Double check these before sending — this is what I'll use to schedule you.</p>
-							<div id="package-summary" class="package-summary"></div>
-							<ul class="actions">
-								<li><button type="button" class="primary" onclick="confirmPackageBooking()">Confirm &amp; Send</button></li>
-								<li><button type="button" onclick="backToPackageForm()">Go Back</button></li>
-							</ul>
-						</div>
-					</div>
+        #banner h1::after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 3px;
+            margin-top: 20px;
+            background: linear-gradient(90deg, var(--dune-gold), var(--dune-orange), transparent);
+        }
 
-					<!-- VOD Review modal -->
-					<div id="vod-modal-overlay" class="modal-overlay" onclick="if (event.target === this) closeVodModal()">
-						<div class="modal-box">
-							<button type="button" class="modal-close" onclick="closeVodModal()" aria-label="Close">&times;</button>
-							<h3>VOD Review Request</h3>
-							<p>
-								Send me a link to your recorded game and I'll commentate over it — moves I'd reconsider,
-								strategy adjustments, and spots worth revisiting. <strong>Please allow at least 3 days</strong>
-								for me to send your review back.
-							</p>
-							<form id="vod-form" onsubmit="return submitVodRequest(event)">
-								<div class="fields">
-									<div class="field half">
-										<label for="vod-name">Name</label>
-										<input type="text" id="vod-name" required />
-									</div>
-									<div class="field half">
-										<label for="vod-email">Email</label>
-										<input type="email" id="vod-email" required />
-									</div>
-									<div class="field half">
-										<label for="vod-discord">Discord Username</label>
-										<input type="text" id="vod-discord" required />
-									</div>
-									<div class="field half">
-										<label for="vod-date">Review Needed By</label>
-										<input type="date" id="vod-date" required />
-									</div>
-									<div class="field">
-										<label for="vod-link">Game Recording Link</label>
-										<input type="url" id="vod-link" placeholder="YouTube, Google Drive, etc." required />
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Request" class="primary" /></li>
-								</ul>
-							</form>
-						</div>
-					</div>
+        .hero-kicker {
+            color: var(--dune-gold-light);
+            text-transform: uppercase;
+            letter-spacing: .18em;
+            font-size: .82rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
 
-			</div>
+        .hero-handles {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            color: var(--dune-gold-light);
+            margin: .6rem 0 0;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				function openPackageModal() {
-					document.getElementById('package-modal-overlay').classList.add('active');
-				}
+        .hero-subtitle {
+            max-width: 760px;
+            font-size: 1.25rem;
+            color: #f1eadc;
+            margin: 1.4rem 0 .6rem;
+        }
 
-				function closePackageModal() {
-					document.getElementById('package-modal-overlay').classList.remove('active');
-				}
+        .hero-support {
+            max-width: 720px;
+            color: var(--dune-muted);
+            font-size: 1rem;
+        }
 
-				function closePackageConfirm() {
-					document.getElementById('package-confirm-overlay').classList.remove('active');
-				}
+        .hero-proof {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem;
+            margin: 1.7rem 0;
+        }
 
-				function backToPackageForm() {
-					closePackageConfirm();
-					openPackageModal();
-				}
+        .proof-chip {
+            padding: .65rem .9rem;
+            border: 1px solid rgba(224,176,75,.34);
+            background: rgba(7,11,18,.64);
+            border-radius: 4px;
+            color: var(--dune-sand);
+            font-size: .88rem;
+        }
 
-				function formatDateTime(dateStr, timeStr) {
-					if (!dateStr || !timeStr) return '';
-					var d = new Date(dateStr + 'T' + timeStr);
-					return d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }) +
-						' at ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
-				}
+        .proof-chip strong { color: var(--dune-gold-light); }
 
-				function escapeHtml(str) {
-					var div = document.createElement('div');
-					div.textContent = str;
-					return div.innerHTML;
-				}
+        .section-intro {
+            max-width: 850px;
+            margin-bottom: 2.5rem;
+        }
 
-				function getPackageSessions() {
-					return [
-						{ label: 'Session 1 — Screening Call (30 min)', date: document.getElementById('s1-date').value, time: document.getElementById('s1-time').value },
-						{ label: 'Session 2 — Coaching (1 hr)', date: document.getElementById('s2-date').value, time: document.getElementById('s2-time').value },
-						{ label: 'Session 3 — Coaching (1 hr)', date: document.getElementById('s3-date').value, time: document.getElementById('s3-time').value }
-					];
-				}
+        .section-intro p { color: var(--dune-muted); }
 
-				function showPackageConfirmation(event) {
-					event.preventDefault();
+        .major h2, header.major h2, header.major h3 {
+            color: var(--dune-gold-light);
+            text-shadow: 0 0 20px rgba(224,176,75,.08);
+        }
 
-					var form = document.getElementById('package-form');
-					if (!form.reportValidity()) return false;
+        #main > section,
+        #main > .wrapper {
+            border-top: 1px solid rgba(224,176,75,.10);
+        }
 
-					var name = document.getElementById('package-name').value;
-					var email = document.getElementById('package-email').value;
-					var discord = document.getElementById('package-discord').value;
-					var sessions = getPackageSessions();
+        .credibility {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0 3rem;
+        }
 
-					var html = '<p><strong>Name:</strong> ' + escapeHtml(name) + '<br>' +
-						'<strong>Email:</strong> ' + escapeHtml(email) + '<br>' +
-						'<strong>Discord:</strong> ' + escapeHtml(discord) + '</p><ul>';
-					sessions.forEach(function (s) {
-						html += '<li><strong>' + s.label + ':</strong> ' + formatDateTime(s.date, s.time) + '</li>';
-					});
-					html += '</ul>';
+        .stat-card {
+            background: linear-gradient(145deg, rgba(21,35,51,.95), rgba(10,18,28,.96));
+            border: 1px solid var(--dune-line);
+            padding: 1.6rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 18px 45px rgba(0,0,0,.22);
+        }
 
-					document.getElementById('package-summary').innerHTML = html;
-					closePackageModal();
-					document.getElementById('package-confirm-overlay').classList.add('active');
-					return false;
-				}
+        .stat-card::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; bottom: 0; width: 4px;
+            background: linear-gradient(var(--dune-gold), var(--dune-orange));
+        }
 
-				function confirmPackageBooking() {
-					var name = document.getElementById('package-name').value;
-					var email = document.getElementById('package-email').value;
-					var discord = document.getElementById('package-discord').value;
-					var sessions = getPackageSessions();
+        .stat-number {
+            font-size: clamp(2.2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            color: var(--dune-gold-light);
+            line-height: 1;
+        }
 
-					var subject = 'Starter Package Booking Request';
-					var body = 'Name: ' + name + '\n' +
-						'Email: ' + email + '\n' +
-						'Discord: ' + discord + '\n\n' +
-						sessions.map(function (s) { return s.label + ': ' + formatDateTime(s.date, s.time); }).join('\n');
+        .stat-label {
+            margin-top: .6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: .78rem;
+        }
 
-					window.location.href = 'mailto:argonda.ajinkya@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-					closePackageConfirm();
-					scrollToPayment();
-				}
+        .stat-detail {
+            color: var(--dune-muted);
+            font-size: .85rem;
+            margin-top: .35rem;
+        }
 
-				function scrollToPayment() {
-					var payment = document.getElementById('payment');
-					if (payment) {
-						window.setTimeout(function () {
-							payment.scrollIntoView({ behavior: 'smooth' });
-						}, 150);
-					}
-				}
+        .credential-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 2rem;
+            align-items: stretch;
+        }
 
-				function formatDateOnly(dateStr) {
-					if (!dateStr) return '';
-					var d = new Date(dateStr + 'T00:00:00');
-					return d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
-				}
+        .credential-photo {
+            min-height: 330px;
+            border: 1px solid var(--dune-line);
+            overflow: hidden;
+            padding: 0;
+        }
 
-				function openVodModal() {
-					var dateInput = document.getElementById('vod-date');
-					var minDate = new Date();
-					minDate.setDate(minDate.getDate() + 3);
-					dateInput.min = minDate.toISOString().split('T')[0];
-					document.getElementById('vod-modal-overlay').classList.add('active');
-				}
+        .credential-photo img {
+            width: 100%;
+            height: 100%;
+            min-height: 330px;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+        }
 
-				function closeVodModal() {
-					document.getElementById('vod-modal-overlay').classList.remove('active');
-				}
+        .credential-copy {
+            background: rgba(16,27,41,.72);
+            border: 1px solid rgba(224,176,75,.14);
+            padding: 2rem;
+        }
 
-				function submitVodRequest(event) {
-					event.preventDefault();
+        .credential-copy p { color: var(--dune-muted); }
+        .credential-copy strong { color: #f1eadc; }
 
-					var form = document.getElementById('vod-form');
-					if (!form.reportValidity()) return false;
+        .who-grid,
+        .coaching-scope {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+        }
 
-					var name = document.getElementById('vod-name').value;
-					var email = document.getElementById('vod-email').value;
-					var discord = document.getElementById('vod-discord').value;
-					var date = document.getElementById('vod-date').value;
-					var link = document.getElementById('vod-link').value;
+        .dune-panel {
+            background: linear-gradient(145deg, rgba(16,27,41,.95), rgba(8,14,22,.95));
+            border: 1px solid rgba(224,176,75,.18);
+            padding: 1.7rem;
+            box-shadow: 0 18px 50px rgba(0,0,0,.16);
+        }
 
-					var subject = 'VOD Review Request';
-					var body = 'Name: ' + name + '\n' +
-						'Email: ' + email + '\n' +
-						'Discord: ' + discord + '\n' +
-						'Recording Link: ' + link + '\n' +
-						'Review Needed By: ' + formatDateOnly(date) + '\n';
+        .dune-panel h3 {
+            color: var(--dune-gold-light);
+            margin-bottom: 1rem;
+        }
 
-					window.location.href = 'mailto:argonda.ajinkya@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-					closeVodModal();
-					scrollToPayment();
-					return false;
-				}
-			</script>
+        .dune-panel ul { margin-bottom: 0; }
+        .dune-panel li { color: var(--dune-muted); margin-bottom: .55rem; }
 
-	</body>
+        .dune-panel li::marker { color: var(--dune-orange); }
+
+        .scope-card {
+            min-height: 220px;
+        }
+
+        .scope-card .scope-tag {
+            color: var(--dune-orange);
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            font-weight: 800;
+        }
+
+        .scope-card p { color: var(--dune-muted); }
+
+        .features {
+            gap: 1.1rem !important;
+        }
+
+        .features section.linked {
+            background: linear-gradient(145deg, rgba(17,29,43,.98), rgba(8,14,22,.98));
+            border: 1px solid rgba(224,176,75,.18);
+            padding: 1.8rem !important;
+            box-shadow: 0 20px 55px rgba(0,0,0,.18);
+            transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+        }
+
+        .features section.linked:hover {
+            transform: translateY(-4px);
+            border-color: rgba(224,176,75,.5);
+            box-shadow: 0 25px 60px rgba(0,0,0,.28);
+        }
+
+        .features section.linked h3 {
+            color: var(--dune-gold-light);
+            margin-bottom: .75rem;
+        }
+
+        .features section.linked p,
+        .features section.linked li { color: var(--dune-muted); }
+
+        .features section.featured {
+            border-color: rgba(224,176,75,.65);
+            box-shadow: 0 0 0 1px rgba(224,176,75,.1), 0 25px 65px rgba(224,176,75,.08);
+            position: relative;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            padding: .35rem .6rem;
+            background: linear-gradient(90deg, var(--dune-gold), var(--dune-orange));
+            color: #101217;
+            font-size: .68rem;
+            font-weight: 900;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            margin-bottom: .8rem;
+        }
+
+        .price {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: .5rem 0 1rem;
+        }
+
+        .product-hook {
+            color: #eee3ce !important;
+            font-weight: 600;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .step {
+            border-top: 2px solid var(--dune-gold);
+            background: rgba(16,27,41,.72);
+            padding: 1.25rem;
+        }
+
+        .step-number {
+            color: var(--dune-orange);
+            font-size: .78rem;
+            font-weight: 900;
+            letter-spacing: .14em;
+        }
+
+        .step h3 { color: var(--dune-gold-light); margin: .4rem 0; }
+        .step p { color: var(--dune-muted); margin: 0; }
+
+        #booking .booking-embed {
+            position: relative;
+            max-width: 900px;
+            margin: 2em auto 0;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 6px;
+            box-shadow: 0 25px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.06);
+        }
+
+        #booking .booking-embed::before {
+            content: "";
+            display: block;
+            height: 6px;
+            border-radius: 6px 6px 0 0;
+            background: linear-gradient(90deg, #e0b04b, #c46a3c);
+            margin-bottom: 6px;
+        }
+
+        #booking .booking-embed iframe {
+            display: block;
+            width: 100%;
+            height: 720px;
+            border: none;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .booking-followup {
+            max-width: 900px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 1.25rem;
+            background: rgba(224,176,75,.07);
+            border: 1px solid rgba(224,176,75,.18);
+        }
+
+        .booking-followup p { color: var(--dune-muted); }
+
+        .payment-flex {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .payment-method {
+            min-width: 240px;
+            text-align: center;
+            background: rgba(16,27,41,.78);
+            border: 1px solid rgba(224,176,75,.16);
+            padding: 1.5rem;
+        }
+
+        .payment-method h3 { color: var(--dune-gold-light); }
+        .payment-method a { color: var(--dune-gold-light); }
+
+        .faq {
+            max-width: 900px;
+        }
+
+        .faq details {
+            background: rgba(16,27,41,.75);
+            border: 1px solid rgba(224,176,75,.16);
+            margin-bottom: .8rem;
+            padding: 1rem 1.25rem;
+        }
+
+        .faq summary {
+            cursor: pointer;
+            color: var(--dune-gold-light);
+            font-weight: 700;
+        }
+
+        .faq p {
+            color: var(--dune-muted);
+            margin: 1rem 0 .25rem;
+        }
+
+        .final-cta {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 { color: var(--dune-gold-light); }
+
+        .muted-note {
+            color: var(--dune-muted);
+            font-size: .85rem;
+        }
+
+        .button.primary,
+        input[type="submit"].primary {
+            background: linear-gradient(90deg, var(--dune-gold), var(--dune-orange)) !important;
+            color: #111 !important;
+            border: none !important;
+            font-weight: 800;
+            text-shadow: none;
+        }
+
+        .button:not(.primary) {
+            border-color: rgba(224,176,75,.35) !important;
+        }
+
+        .modal-overlay {
+            background: rgba(2,5,9,.86) !important;
+            backdrop-filter: blur(8px);
+        }
+
+        .modal-box {
+            background: linear-gradient(145deg, #142334, #09111b) !important;
+            border: 1px solid rgba(224,176,75,.42) !important;
+            box-shadow: 0 30px 90px rgba(0,0,0,.7) !important;
+        }
+
+        .modal-box h3 { color: var(--dune-gold-light); }
+        .modal-box p, .modal-box label { color: var(--dune-muted); }
+        .modal-close { color: var(--dune-gold-light) !important; }
+
+        @media screen and (max-width: 980px) {
+            .credential-grid, .who-grid, .coaching-scope { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media screen and (max-width: 736px) {
+            #banner { min-height: 620px; }
+            .credibility { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; }
+            #booking .booking-embed iframe { height: 900px; }
+            .hero-proof { flex-direction: column; align-items: stretch; }
+            .proof-chip { width: 100%; }
+        }
+    </style>
+</head>
+
+<body class="is-preload coaching-page">
+<div id="wrapper">
+
+    <header id="header" class="alt style2">
+        <a href="index.html" class="logo"><strong>Ajinkya Argonda</strong> &nbsp; <span>Dune Strategy Coaching</span></a>
+    </header>
+
+    <section id="banner">
+        <div class="inner">
+            <div class="hero-kicker">Uprising • Bloodlines • Conspiracy • Competitive Strategy</div>
+            <header class="major">
+                <h1>Master Dune: Imperium</h1>
+            </header>
+            <p class="hero-handles">Dinosaur11 &middot; Consules</p>
+            <p class="hero-subtitle"><strong>Stop losing games without understanding why.</strong></p>
+            <p class="hero-support">
+                Personalized strategy coaching for players who know the rules but want to understand the deeper decisions
+                that separate strong players from everyone else.
+            </p>
+            <div class="hero-proof">
+                <div class="proof-chip"><strong>65% win rate</strong> · 70+ Uprising games</div>
+                <div class="proof-chip"><strong>45% win rate</strong> · 1,000+ games with Bloodlines added</div>
+                <div class="proof-chip"><strong>GenCon 2026 Runner-Up</strong> · Dune: Imperium Uprising Championship</div>
+                <div class="proof-chip"><strong>4th Place</strong> · MrBeast Dune: Imperium Invitational</div>
+            </div>
+            <ul class="actions">
+                <li><a href="#pricing" class="button primary scrolly">Explore Coaching</a></li>
+                <li><a href="#booking" class="button scrolly">Book a Session</a></li>
+                <li><a href="#faq" class="button scrolly">FAQ</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="main">
+
+        <section id="expertise" class="wrapper style1">
+            <div class="inner">
+                <header class="major">
+                    <h2>Learn How Strong Players Think</h2>
+                </header>
+                <div class="section-intro">
+                    <p>
+                        I don't want to simply tell you what move to make. The goal of coaching is to help you build
+                        the judgment to evaluate a board, recognize opportunities, understand risk, and make better
+                        decisions on your own.
+                    </p>
+                </div>
+
+                <div class="credibility">
+                    <div class="stat-card">
+                        <div class="stat-number">65%</div>
+                        <div class="stat-label">Uprising Win Rate</div>
+                        <div class="stat-detail">70+ games played</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">45%</div>
+                        <div class="stat-label">With Bloodlines</div>
+                        <div class="stat-detail">1,000+ games played across the broader format</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2×</div>
+                        <div class="stat-label">Major Competitive Results</div>
+                        <div class="stat-detail">GenCon 2026 Runner-Up + MrBeast Invitational 4th</div>
+                    </div>
+                </div>
+
+                <div class="credential-grid">
+                    <div class="credential-photo">
+                        <img src="images/invitational_winner.png" alt="Ajinkya Argonda (Dinosaur11) holding his 4th place check from the MrBeast Dune: Imperium Invitational" />
+                    </div>
+
+                    <div class="credential-copy">
+                        <h3>Why Learn From Me?</h3>
+                        <p>
+                            I have played <strong>70+ Dune: Imperium – Uprising games</strong> at roughly a
+                            <strong>65% win rate</strong>. With Bloodlines added, I've played
+                            <strong>1,000+ games</strong> at roughly a <strong>45% win rate</strong>.
+                        </p>
+                        <p>
+                            I was the <strong>runner-up at the 2026 GenCon Dune: Imperium Uprising Championship</strong>
+                            and placed <strong>4th in the MrBeast Dune: Imperium Invitational</strong>.
+                        </p>
+                        <p>
+                            I also create strategy and gameplay content on
+                            <strong><a href="https://youtube.com/@consules?si=QPJ7EDrA0RvHNK1y" target="_blank" rel="noopener">YouTube</a></strong>,
+                            where I break down games and strategic ideas for players who want to improve.
+                        </p>
+                        <p>
+                            My coaching is built around turning that experience into a framework you can actually use:
+                            not just memorizing openings, but learning how to reason through the game.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="who-is-this-for" class="wrapper">
+            <div class="inner">
+                <header class="major">
+                    <h2>Who Is This Coaching For?</h2>
+                </header>
+                <div class="who-grid">
+                    <div class="dune-panel">
+                        <h3>Players Ready to Break Through</h3>
+                        <ul>
+                            <li>You understand the rules but keep losing to the same strategic mistakes.</li>
+                            <li>You want to understand <strong>why</strong> strong players make certain decisions.</li>
+                            <li>You struggle with deck-building, intrigue timing, agent placement, or combat commitment.</li>
+                            <li>You want to become better at adapting instead of following a fixed strategy.</li>
+                            <li>You want personalized feedback on your actual games.</li>
+                            <li>You want to compete at a higher level, whether in tournaments or with a strong local group.</li>
+                        </ul>
+                    </div>
+                    <div class="dune-panel">
+                        <h3>What We Work On</h3>
+                        <ul>
+                            <li>Deck-building priorities and card evaluation</li>
+                            <li>Reading the board and identifying threats</li>
+                            <li>Faction influence and timing windows</li>
+                            <li>Intrigue management and information advantage</li>
+                            <li>Conflict math, commitment, and retreating from bad fights</li>
+                            <li>Endgame planning and adapting to opponents</li>
+                            <li>Uprising, Bloodlines, Conspiracy, and other expansion-specific strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scope" class="wrapper style2">
+            <div class="inner">
+                <header class="major">
+                    <h2>More Than Standard Coaching</h2>
+                </header>
+                <div class="section-intro">
+                    <p>
+                        Coaching doesn't have to fit into one rigid template. If you have a specific strategic problem,
+                        bring it to me and we'll build the session around it.
+                    </p>
+                </div>
+
+                <div class="coaching-scope">
+                    <div class="dune-panel scope-card">
+                        <span class="scope-tag">Deep Strategy</span>
+                        <h3>Understand the Game at a Higher Level</h3>
+                        <p>
+                            We can focus on the concepts that matter most to your improvement: evaluating cards,
+                            planning several turns ahead, identifying tempo opportunities, and understanding when
+                            conventional wisdom should be ignored.
+                        </p>
+                    </div>
+
+                    <div class="dune-panel scope-card">
+                        <span class="scope-tag">Homebrew & Custom Formats</span>
+                        <h3>Want Help Designing Your Own Game?</h3>
+                        <p>
+                            I also work with players who have created homebrew variants, custom cards, or modified
+                            versions of Dune: Imperium. We can discuss card balance, power level, interaction,
+                            faction identity, and whether a mechanic creates interesting decisions or simply becomes
+                            the obvious choice.
+                        </p>
+                    </div>
+
+                    <div class="dune-panel scope-card">
+                        <span class="scope-tag">Expansion Strategy</span>
+                        <h3>Uprising + Bloodlines + Conspiracy</h3>
+                        <p>
+                            We can focus specifically on how an expansion changes the strategic landscape rather than
+                            treating every game as if it were the base ruleset.
+                        </p>
+                    </div>
+
+                    <div class="dune-panel scope-card">
+                        <span class="scope-tag">Game Analysis</span>
+                        <h3>Bring Me a Decision You Couldn't Solve</h3>
+                        <p>
+                            If there is a specific turn, card, conflict, or sequence you keep thinking about after a
+                            game, bring it to the session. We can break down the alternatives and the reasoning behind them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="wrapper style1">
+            <div class="inner">
+                <header class="major">
+                    <h2>Choose How You Want to Improve</h2>
+                </header>
+                <div class="section-intro">
+                    <p>
+                        Four ways to work together depending on whether you want feedback on a completed game,
+                        coaching while you play, a focused strategy talk, or a structured plan for improving over
+                        multiple sessions.
+                    </p>
+                </div>
+
+                <div class="features">
+                    <section class="linked">
+                        <h3>VOD Review — $40</h3>
+                        <div class="price">$40</div>
+                        <p class="product-hook">Find out where your game went wrong — without needing to schedule a live session.</p>
+                        <p>Send me a recording of one of your games through YouTube, Google Drive, or another convenient link. I'll analyze it and provide commentary on the decisions that matter.</p>
+                        <ul>
+                            <li>Moves I'd reconsider and why</li>
+                            <li>Strategic alternatives you could have taken</li>
+                            <li>Deck-building and card-evaluation feedback</li>
+                            <li>Specific turns worth revisiting</li>
+                            <li>Practical adjustments to take into your next games</li>
+                        </ul>
+                        <p><strong>Please allow at least 3 days</strong> for the completed review.</p>
+                        <ul class="actions">
+                            <li><button type="button" class="button primary" onclick="openVodModal()">Request VOD Review</button></li>
+                        </ul>
+                    </section>
+
+                    <section class="linked">
+                        <h3>Live Game Coaching — $45</h3>
+                        <div class="price">$45</div>
+                        <p class="product-hook">Get coached in real time, while the decisions are actually in front of you.</p>
+                        <p>
+                            Join a game together over <strong>Discord</strong>. I give live commentary on your
+                            decisions as you play, so you see the reasoning applied in the moment instead of after
+                            the fact.
+                        </p>
+                        <ul class="actions">
+                            <li><a href="#booking" class="button primary">Book Live Coaching</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="linked">
+                        <h3>Strategy Session — $45</h3>
+                        <div class="price">$45</div>
+                        <p class="product-hook">A focused conversation about the concepts holding you back.</p>
+                        <p>
+                            A <strong>1-hour</strong> Discord call focused on specific principles — deck building,
+                            intrigue timing, expansion strategy, or any other area you want to improve — with no
+                            live game required.
+                        </p>
+                        <ul class="actions">
+                            <li><a href="#booking" class="button primary">Book Strategy Session</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="linked featured">
+                        <span class="featured-badge">Best for Serious Improvement</span>
+                        <h3>Starter Package — $100</h3>
+                        <div class="price">$100</div>
+                        <p class="product-hook">Diagnose the problem. Build a plan. Apply it.</p>
+                        <p>
+                            Instead of trying to guess what you need, we start with a <strong>30-minute screening call</strong>
+                            to identify the biggest weaknesses in your game.
+                        </p>
+                        <ul>
+                            <li><strong>30-minute screening call</strong> to identify exactly where your game is stuck</li>
+                            <li>Determine whether a <strong>live game</strong> or <strong>teaching-focused strategy session</strong> is the best next step</li>
+                            <li><strong>Two 1-hour coaching sessions</strong> built around what we discover</li>
+                            <li>A structured path instead of isolated advice</li>
+                        </ul>
+                        <p class="muted-note">After the screening call, we'll schedule the two coaching sessions around your goals and availability.</p>
+                        <ul class="actions">
+                            <li><button type="button" class="button primary" onclick="openPackageModal()">Start the Package</button></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="wrapper">
+            <div class="inner">
+                <header class="major">
+                    <h2>How Coaching Works</h2>
+                </header>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">01 · IDENTIFY</div>
+                        <h3>Find the Leak</h3>
+                        <p>We identify the habits, decisions, or concepts that are holding your game back.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02 · UNDERSTAND</div>
+                        <h3>Learn the Principle</h3>
+                        <p>Instead of memorizing a move, you learn the reasoning that makes the move good.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03 · APPLY</div>
+                        <h3>Use It in Games</h3>
+                        <p>We apply the idea to real positions, your own games, or a live session.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04 · ADAPT</div>
+                        <h3>Build Judgment</h3>
+                        <p>The goal is to make better decisions even when the board changes and the obvious plan disappears.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking">
+            <div class="inner">
+                <header class="major">
+                    <h2>Book a Single Session</h2>
+                </header>
+                <p>
+                    Pick a time that works for you. The appointment will go onto my calendar and you'll receive a
+                    confirmation email. Payment is completed separately below.
+                </p>
+                <div class="booking-embed">
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3Bf2jUbc_E0Hn_WJDfb_12kDygMX-ZrwNxJyjRfTcDbdeRP7R72EDObgPPZo7nbOfF7FR089B7"
+                            title="Book a Dune Imperium Uprising coaching session" loading="lazy"></iframe>
+                </div>
+                <div class="booking-followup">
+                    <p><strong>Important:</strong> Your session is confirmed after payment is received. After booking, use the payment section below.</p>
+                    <ul class="actions">
+                        <li><a href="#payment" class="button primary">Go to Payment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="payment">
+            <div class="inner">
+                <header class="major">
+                    <h2>Confirm Your Session</h2>
+                </header>
+                <p>Please send payment via PayPal or Venmo prior to your session. If you booked a Starter Package, use the package request flow first and then complete payment.</p>
+                <div class="payment-flex">
+                    <div class="payment-method">
+                        <h3>PayPal</h3>
+                        <img src="images/paypal_qr.png" alt="PayPal QR Code" width="200" height="200" />
+                        <p><a href="https://paypal.me/Consules" target="_blank" rel="noopener">paypal.me/Consules</a></p>
+                    </div>
+                    <div class="payment-method">
+                        <h3>Venmo</h3>
+                        <img src="images/venmo_qr.png" alt="Venmo QR Code" width="200" height="200" />
+                        <p><a href="https://venmo.com/u/Ajinkya-Argonda" target="_blank" rel="noopener">@Ajinkya-Argonda</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="wrapper style2">
+            <div class="inner">
+                <header class="major">
+                    <h2>Frequently Asked Questions</h2>
+                </header>
+                <div class="faq">
+                    <details>
+                        <summary>Do I need to be an experienced player?</summary>
+                        <p>No. The coaching is primarily aimed at beginner-to-intermediate players who understand the rules and want to improve their strategic decision-making.</p>
+                    </details>
+                    <details>
+                        <summary>Is Uprising the main focus?</summary>
+                        <p>Yes. Uprising is the primary focus, and coaching can also cover Bloodlines, Conspiracy, and other relevant expansions or formats.</p>
+                    </details>
+                    <details>
+                        <summary>Can we focus on a specific strategy problem?</summary>
+                        <p>Absolutely. If you struggle with deck building, intrigue timing, combat, faction influence, endgame planning, or another specific concept, we can make the session about that problem.</p>
+                    </details>
+                    <details>
+                        <summary>Can you review a game I've already played?</summary>
+                        <p>Yes. The VOD Review is specifically designed for this. Send a recording and I'll identify the decisions and patterns most worth learning from.</p>
+                    </details>
+                    <details>
+                        <summary>Can you help with my homebrew version of Dune: Imperium?</summary>
+                        <p>Yes. We can discuss custom cards, balance, faction identity, power level, interactions, and whether a homebrew mechanic creates meaningful decisions or an overly dominant strategy.</p>
+                    </details>
+                    <details>
+                        <summary>Do I need Discord?</summary>
+                        <p>Yes for live and strategy sessions, since those sessions are conducted over Discord.</p>
+                    </details>
+                    <details>
+                        <summary>How quickly will I receive a VOD Review?</summary>
+                        <p>Please allow at least 3 days for the completed review.</p>
+                    </details>
+                    <details>
+                        <summary>What happens after I purchase the Starter Package?</summary>
+                        <p>We begin with a 30-minute screening call. After that, we'll identify the best approach and schedule your two 1-hour coaching sessions around your goals and availability.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="youtube" class="wrapper">
+            <div class="inner">
+                <div class="final-cta">
+                    <header class="major">
+                        <h2>Not Ready to Book?</h2>
+                    </header>
+                    <p>
+                        Start with the free strategy content on my YouTube channel. See how I analyze games and
+                        explain strategic concepts before deciding whether personalized coaching is right for you.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="https://youtube.com/@consules?si=QPJ7EDrA0RvHNK1y" target="_blank" rel="noopener" class="button primary">Watch the Strategy Channel</a></li>
+                    </ul>
+                    <p class="muted-note">Testimonials are being collected from coaching clients and will be added here as they become available.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Starter Package modal -->
+<div id="package-modal-overlay" class="modal-overlay" onclick="if (event.target === this) closePackageModal()">
+    <div class="modal-box">
+        <button type="button" class="modal-close" onclick="closePackageModal()" aria-label="Close">&times;</button>
+        <h3>Start the $100 Coaching Package</h3>
+        <p>
+            Start by requesting your 30-minute screening call. After that call, we'll schedule the two 1-hour
+            coaching sessions around your goals and availability.
+        </p>
+        <form id="package-form" onsubmit="return showPackageConfirmation(event)">
+            <div class="fields">
+                <div class="field half">
+                    <label for="package-name">Name</label>
+                    <input type="text" id="package-name" required />
+                </div>
+                <div class="field half">
+                    <label for="package-email">Email</label>
+                    <input type="email" id="package-email" required />
+                </div>
+                <div class="field">
+                    <label for="package-discord">Discord Username</label>
+                    <input type="text" id="package-discord" required />
+                </div>
+                <div class="field half">
+                    <label for="s1-date">Preferred Screening Date</label>
+                    <input type="date" id="s1-date" required />
+                </div>
+                <div class="field half">
+                    <label for="s1-time">Preferred Screening Time</label>
+                    <input type="time" id="s1-time" required />
+                </div>
+                <div class="field">
+                    <label for="package-goal">What do you most want to improve?</label>
+                    <textarea id="package-goal" rows="4" placeholder="Examples: deck building, combat, intrigue timing, expansion strategy, tournament preparation, homebrew balance..."></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Review Request" class="primary" /></li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div id="package-confirm-overlay" class="modal-overlay" onclick="if (event.target === this) closePackageConfirm()">
+    <div class="modal-box">
+        <button type="button" class="modal-close" onclick="closePackageConfirm()" aria-label="Close">&times;</button>
+        <h3>Confirm Your Screening Request</h3>
+        <p>Double check the information below before sending the request.</p>
+        <div id="package-summary" class="package-summary"></div>
+        <ul class="actions">
+            <li><button type="button" class="primary" onclick="confirmPackageBooking()">Confirm &amp; Send</button></li>
+            <li><button type="button" onclick="backToPackageForm()">Go Back</button></li>
+        </ul>
+    </div>
+</div>
+
+<!-- VOD Review modal -->
+<div id="vod-modal-overlay" class="modal-overlay" onclick="if (event.target === this) closeVodModal()">
+    <div class="modal-box">
+        <button type="button" class="modal-close" onclick="closeVodModal()" aria-label="Close">&times;</button>
+        <h3>VOD Review Request — $40</h3>
+        <p>
+            Send me a link to your recorded game and I'll commentate over it — moves I'd reconsider, strategy
+            adjustments, and spots worth revisiting. <strong>Please allow at least 3 days</strong> for me to send your review back.
+        </p>
+        <form id="vod-form" onsubmit="return submitVodRequest(event)">
+            <div class="fields">
+                <div class="field half">
+                    <label for="vod-name">Name</label>
+                    <input type="text" id="vod-name" required />
+                </div>
+                <div class="field half">
+                    <label for="vod-email">Email</label>
+                    <input type="email" id="vod-email" required />
+                </div>
+                <div class="field half">
+                    <label for="vod-discord">Discord Username</label>
+                    <input type="text" id="vod-discord" required />
+                </div>
+                <div class="field half">
+                    <label for="vod-date">Review Needed By</label>
+                    <input type="date" id="vod-date" required />
+                </div>
+                <div class="field">
+                    <label for="vod-link">Game Recording Link</label>
+                    <input type="url" id="vod-link" placeholder="YouTube, Google Drive, etc." required />
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Request" class="primary" /></li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    function openPackageModal() {
+        document.getElementById('package-modal-overlay').classList.add('active');
+    }
+    function closePackageModal() {
+        document.getElementById('package-modal-overlay').classList.remove('active');
+    }
+    function closePackageConfirm() {
+        document.getElementById('package-confirm-overlay').classList.remove('active');
+    }
+    function backToPackageForm() {
+        closePackageConfirm();
+        openPackageModal();
+    }
+    function formatDateTime(dateStr, timeStr) {
+        if (!dateStr || !timeStr) return '';
+        var d = new Date(dateStr + 'T' + timeStr);
+        return d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }) +
+            ' at ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+    }
+    function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.textContent = str || '';
+        return div.innerHTML;
+    }
+    function showPackageConfirmation(event) {
+        event.preventDefault();
+        var form = document.getElementById('package-form');
+        if (!form.reportValidity()) return false;
+
+        var name = document.getElementById('package-name').value;
+        var email = document.getElementById('package-email').value;
+        var discord = document.getElementById('package-discord').value;
+        var date = document.getElementById('s1-date').value;
+        var time = document.getElementById('s1-time').value;
+        var goal = document.getElementById('package-goal').value;
+
+        var html = '<p><strong>Name:</strong> ' + escapeHtml(name) + '<br>' +
+            '<strong>Email:</strong> ' + escapeHtml(email) + '<br>' +
+            '<strong>Discord:</strong> ' + escapeHtml(discord) + '<br>' +
+            '<strong>Preferred Screening:</strong> ' + escapeHtml(formatDateTime(date, time)) + '</p>' +
+            '<p><strong>Primary Goal:</strong><br>' + escapeHtml(goal || 'Not specified') + '</p>';
+
+        document.getElementById('package-summary').innerHTML = html;
+        closePackageModal();
+        document.getElementById('package-confirm-overlay').classList.add('active');
+        return false;
+    }
+    function confirmPackageBooking() {
+        var name = document.getElementById('package-name').value;
+        var email = document.getElementById('package-email').value;
+        var discord = document.getElementById('package-discord').value;
+        var date = document.getElementById('s1-date').value;
+        var time = document.getElementById('s1-time').value;
+        var goal = document.getElementById('package-goal').value;
+
+        var subject = 'Dune Imperium Coaching Package Request';
+        var body = 'Dune: Imperium Starter Package — $100\n\n' +
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Discord: ' + discord + '\n' +
+            'Preferred Screening: ' + formatDateTime(date, time) + '\n' +
+            'Primary Goal: ' + (goal || 'Not specified') + '\n\n' +
+            'Please confirm the screening time and next steps for payment.';
+
+        window.location.href = 'mailto:argonda.ajinkya@gmail.com?subject=' +
+            encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+        closePackageConfirm();
+        document.getElementById('payment').scrollIntoView({ behavior: 'smooth' });
+    }
+    function openVodModal() {
+        var dateInput = document.getElementById('vod-date');
+        var minDate = new Date();
+        minDate.setDate(minDate.getDate() + 3);
+        dateInput.min = minDate.toISOString().split('T')[0];
+        document.getElementById('vod-modal-overlay').classList.add('active');
+    }
+    function closeVodModal() {
+        document.getElementById('vod-modal-overlay').classList.remove('active');
+    }
+    function formatDateOnly(dateStr) {
+        if (!dateStr) return '';
+        var d = new Date(dateStr + 'T00:00:00');
+        return d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+    }
+    function submitVodRequest(event) {
+        event.preventDefault();
+        var form = document.getElementById('vod-form');
+        if (!form.reportValidity()) return false;
+
+        var name = document.getElementById('vod-name').value;
+        var email = document.getElementById('vod-email').value;
+        var discord = document.getElementById('vod-discord').value;
+        var date = document.getElementById('vod-date').value;
+        var link = document.getElementById('vod-link').value;
+
+        var subject = 'VOD Review Request';
+        var body = 'Dune: Imperium VOD Review — $40\n\n' +
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Discord: ' + discord + '\n' +
+            'Recording Link: ' + link + '\n' +
+            'Review Needed By: ' + formatDateOnly(date) + '\n\n' +
+            'Please confirm payment and the review timeline.';
+
+        window.location.href = 'mailto:argonda.ajinkya@gmail.com?subject=' +
+            encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+        closeVodModal();
+        document.getElementById('payment').scrollIntoView({ behavior: 'smooth' });
+        return false;
+    }
+</script>
+</body>
 </html>
