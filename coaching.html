@@ -414,6 +414,35 @@
             max-width: 900px;
         }
 
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .testimonial-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .testimonial-quote {
+            color: var(--dune-sand);
+            font-size: 1.02rem;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial-attribution {
+            margin-top: 1rem;
+            margin-bottom: 0;
+            color: var(--dune-gold-light);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: .78rem;
+        }
+
         .faq details {
             background: rgba(16,27,41,.75);
             border: 1px solid rgba(224,176,75,.16);
@@ -802,6 +831,12 @@
                 </div>
                 <div class="booking-followup">
                     <p><strong>Important:</strong> Your session is confirmed after payment is received. After booking, use the payment section below.</p>
+                    <p>
+                        <strong>Booked by accident, or need to cancel/reschedule?</strong> The confirmation email
+                        from Google Calendar includes <strong>Cancel</strong> and <strong>Reschedule</strong> links
+                        — you can use those directly, no need to wait on me. If you can't find the email, just
+                        email <a href="mailto:argonda.ajinkya@gmail.com">argonda.ajinkya@gmail.com</a> and I'll cancel it for you.
+                    </p>
                     <ul class="actions">
                         <li><a href="#payment" class="button primary">Go to Payment</a></li>
                     </ul>
@@ -868,6 +903,29 @@
                         <summary>What happens after I purchase the Starter Package?</summary>
                         <p>We begin with a 30-minute screening call. After that, we'll identify the best approach and schedule your two 1-hour coaching sessions around your goals and availability.</p>
                     </details>
+                    <details>
+                        <summary>I booked a session by accident — how do I cancel?</summary>
+                        <p>Your booking confirmation email from Google Calendar includes <strong>Cancel</strong> and <strong>Reschedule</strong> links, so you can cancel it yourself right away. If you can't find the email or run into an issue, email <a href="mailto:argonda.ajinkya@gmail.com">argonda.ajinkya@gmail.com</a> and I'll cancel it on my end — no charge as long as it hasn't been paid for.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="wrapper style1">
+            <div class="inner">
+                <header class="major">
+                    <h2>What Clients Are Saying</h2>
+                </header>
+                <div class="testimonial-grid">
+                    <div class="dune-panel testimonial-card">
+                        <p class="testimonial-quote">
+                            "Consules Dune Coaching completely changed how I approach the game. Instead of just
+                            playing the surface-level faction access, they helped me think much deeper about the
+                            actual decision-making and long-term strategy. Highly recommend if you want to level up
+                            beyond the basics."
+                        </p>
+                        <p class="testimonial-attribution">— Coaching Client</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -885,7 +943,6 @@
                     <ul class="actions special">
                         <li><a href="https://youtube.com/@consules?si=QPJ7EDrA0RvHNK1y" target="_blank" rel="noopener" class="button primary">Watch the Strategy Channel</a></li>
                     </ul>
-                    <p class="muted-note">Testimonials are being collected from coaching clients and will be added here as they become available.</p>
                 </div>
             </div>
         </section>
