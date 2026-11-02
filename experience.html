@@ -23,6 +23,7 @@
 				<li><a href="experience.html">Experience</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="skills.html">Skills</a></li>
+				<li><a href="learning.html">Learning</a></li>
 				<li><a class="btn" href="https://drive.google.com/file/d/1ss2whoXIZcTx8heTVwiE-enRa4z3gUl7/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
 			</ul>
 		</div>
@@ -48,11 +49,15 @@
 					<h3>Software Engineering Intern — The Home Depot</h3>
 					<p>
 						I returned to The Home Depot for a second Software Engineering internship, where I built
-						<strong>mPulse</strong>, a multi-agent pricing intelligence pipeline that helps pricing managers
-						understand Competitor Price Index (CPI) data in plain language instead of manual lookups. The system
-						is backed by a BigQuery-based competitive pricing SQL pipeline I designed to cover CPI metric
-						definitions and SKU-level data flows, translating raw pricing data into clear, actionable answers.
-						This deepened my ability to connect data engineering with multi-agent AI systems.
+						<strong>mPulse</strong>, a multi-agent pricing intelligence system that lets pricing managers ask
+						questions about Competitor Price Index (CPI) data in plain language instead of digging through manual
+						lookups. I built both the front end and the back end: four Gemini agents on Vertex AI work in
+						sequence — one expands short follow-ups like "Why?" into complete questions using the conversation so
+						far, one validates that a question is answerable from the data, one queries BigQuery, and one turns the
+						results into readable answers with charts and suggested follow-up questions. Underneath it sits a
+						BigQuery competitive pricing pipeline covering CPI metric definitions and SKU-level data flows. During
+						a pricing hackathon, I also contributed an output-formatting agent that produced structured JSON
+						responses and Plotly charts. This deepened my ability to connect data engineering with multi-agent AI systems.
 					</p>
 					<div class="chip-row">
 						<span class="chip">Google ADK</span>
@@ -60,6 +65,7 @@
 						<span class="chip">Gemini 2.5 Flash</span>
 						<span class="chip">BigQuery</span>
 						<span class="chip">SQL</span>
+						<span class="chip">Plotly</span>
 					</div>
 				</div>
 			</div>

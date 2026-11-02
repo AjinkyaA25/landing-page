@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Projects — Ajinkya Argonda</title>
-	<meta name="description" content="Nine projects spanning GANs, NLP, reinforcement learning, mobile apps, and full-stack tools." />
+	<meta name="description" content="Twelve projects spanning reinforcement learning, NLP, GANs, abstract reasoning, geospatial modeling, and full-stack tools." />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,7 @@
 				<li><a href="experience.html">Experience</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="skills.html">Skills</a></li>
+				<li><a href="learning.html">Learning</a></li>
 				<li><a class="btn" href="https://drive.google.com/file/d/1ss2whoXIZcTx8heTVwiE-enRa4z3gUl7/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
 			</ul>
 		</div>
@@ -59,6 +60,76 @@
 					<span class="chip">MCTS</span>
 					<span class="chip">Imitation Learning</span>
 					<span class="chip">Computer Vision</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<div class="card-photo placeholder"><span>ARC</span></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>ARC Prize Agent</h3>
+				</div>
+				<span class="date-tag">August 2026 – Present · Class Project</span>
+				<p>
+					For Georgia Tech's Knowledge-Based AI course, I'm building an agent for the ARC Prize challenge: abstract
+					visual reasoning puzzles where the agent sees a few input/output grid examples and must infer the
+					transformation rule for a new grid. Each version is scored on a Gradescope leaderboard, and I document
+					the agent's design and results in milestone reports written in the Advances in Cognitive Systems format.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">Python</span>
+					<span class="chip">Knowledge-Based AI</span>
+					<span class="chip">Abstract Reasoning</span>
+					<span class="chip">Research Writing</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<div class="card-photo placeholder"><span>CC</span></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>Cool Choices — Campus Heat Explorer</h3>
+				</div>
+				<span class="date-tag">August 2026 – Present · Team Project (VIP)</span>
+				<p>
+					A React and Mapbox web app where users place trees on Georgia Tech's campus and see how the thermal
+					environment responds, powered by the SOLWEIG urban thermal-comfort model. I prototyped the app's
+					localized recalculation, Run Analysis progress flow, and scenario save/export in Figma; benchmarked
+					SOLWEIG's GPU and CPU implementations on Georgia Tech's PACE HPC cluster; and collected elevation,
+					LiDAR, land-cover, and tree-canopy source data for New York City, Philadelphia, San Francisco, and Tucson.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">React</span>
+					<span class="chip">Mapbox</span>
+					<span class="chip">SOLWEIG</span>
+					<span class="chip">HPC (PACE)</span>
+					<span class="chip">Figma</span>
+					<span class="chip">Geospatial Data</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<div class="card-photo"><img src="images/dune_uprising.png" alt="Dune Tournament Discord Bot" /></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>Spartacus — Dune Tournament Discord Bot</h3>
+				</div>
+				<span class="date-tag">August 2026 – September 2026 · Personal Project</span>
+				<p>
+					A Python Discord bot that ran a large-scale Dune: Imperium Uprising online tournament — named houses,
+					combinatorial group-stage scheduling, and availability-aware bin-packing to fairly assign match times.
+					The bot also uses a vision API to parse tournament results directly from submitted screenshots, with all
+					data persisted in SQLite: backend systems design paired with practical applied AI for a real, active
+					community.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">Python</span>
+					<span class="chip">discord.py</span>
+					<span class="chip">Vision API</span>
+					<span class="chip">SQLite</span>
 				</div>
 			</div>
 		</article>
@@ -121,6 +192,7 @@
 				<div class="card-head">
 					<h3>The Colosseum</h3>
 				</div>
+				<span class="date-tag">Personal Project</span>
 				<p>
 					A full tournament management web app for The Colosseum, a 64-player Dune: Imperium tournament I
 					organized. Features a spinning-wheel draft system, live group standings, a knockout-stage randomizer,
@@ -133,28 +205,6 @@
 				</div>
 				<div class="card-links">
 					<a href="https://github.com/AjinkyaA25/duneTournament" target="_blank" rel="noopener">Repo →</a>
-				</div>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<div class="card-photo"><img src="images/dune_uprising.png" alt="Dune Tournament Discord Bot" /></div>
-			<div class="card-body">
-				<div class="card-head">
-					<h3>Dune Tournament Discord Bot</h3>
-				</div>
-				<p>
-					A Python Discord bot that ran a large-scale Dune: Imperium Uprising online tournament — named houses,
-					combinatorial group-stage scheduling, and availability-aware bin-packing to fairly assign match times.
-					The bot also uses a vision API to parse tournament results directly from submitted screenshots, with all
-					data persisted in SQLite: backend systems design paired with practical applied AI for a real, active
-					community.
-				</p>
-				<div class="chip-row">
-					<span class="chip accent">Python</span>
-					<span class="chip">discord.py</span>
-					<span class="chip">Vision API</span>
-					<span class="chip">SQLite</span>
 				</div>
 			</div>
 		</article>
@@ -177,6 +227,26 @@
 					<span class="chip accent">Android Studio</span>
 					<span class="chip">Firebase</span>
 					<span class="chip">MVVM</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<div class="card-photo placeholder"><span>C</span></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>Ship Game in C</h3>
+				</div>
+				<span class="date-tag">2024 · Class Project</span>
+				<p>
+					A ship-based game written in C for my Computer Organization course, built on my own structs, pointer-based
+					data structures, and manual memory management — no libraries doing the bookkeeping for me. It's where
+					I learned how the code I write actually maps onto memory and the machine underneath.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">C</span>
+					<span class="chip">Data Structures</span>
+					<span class="chip">Memory Management</span>
 				</div>
 			</div>
 		</article>
