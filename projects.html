@@ -38,27 +38,48 @@
 
 	<section class="projects-grid container">
 
-		<article class="project-card">
-			<div class="card-photo"><img src="images/duneimg.png" alt="Dune Imperium Reinforcement Learning Engine" /></div>
+		<article class="project-card featured">
+			<div class="card-photo"><img src="images/duneimg.png" alt="Dune: Imperium Uprising board" /></div>
 			<div class="card-body">
 				<div class="card-head">
-					<h3>Dune Imperium Reinforcement Learning Engine</h3>
+					<h3>Dune AI — Self-Play Agents for Dune: Imperium Uprising</h3>
 				</div>
-				<span class="date-tag">2026 · Ongoing</span>
+				<span class="date-tag">2026 · Ongoing · Personal Project</span>
 				<p>
-					A Python reinforcement learning engine that plays Dune: Imperium Uprising: a full game-state orchestrator
-					modeling players, contracts, tech, and the spy system (with Bloodlines expansion rules encoded), an
-					MCTS-based decision engine combined with imitation learning, and a vision pipeline for extracting live
-					game state from screenshots and logs. I also used Python libraries to scrape and parse card text and
-					effects into a structured dataset the engine references when evaluating moves — applying classical AI
-					search and modern ML to a complex, rules-heavy game environment.
+					A complete AI system for a four-player strategy board game with hidden hands, shuffled decks, and dozens
+					of interacting card effects. I wrote the rules engine from scratch, built a ladder of increasingly strong
+					agents on top of it, and trained them through hundreds of thousands of self-play games — then put the
+					strongest one in a browser so people can play against it and see why it made each move.
 				</p>
+				<div class="stat-row">
+					<div class="stat"><strong>67%</strong><span>win share for the PPO agent at a four-player table vs. three copies of the evolved heuristic (25% is even)</span></div>
+					<div class="stat"><strong>932k</strong><span>self-play games used to train the deployed PPO network</span></div>
+					<div class="stat"><strong>8,815</strong><span>human decisions extracted from 90 streamed games by computer vision</span></div>
+					<div class="stat"><strong>42k</strong><span>lines of Python, with 189 tests covering the rules engine</span></div>
+				</div>
+				<h4>How it works</h4>
+				<ul class="detail-list">
+					<li><b>Rules engine.</b> Full turn flow with the Bloodlines expansion: 9 leaders, all 59 Intrigue cards, CHOAM contracts, tech tiles, Sardaukar skills, and the spy system. Benchmarking exposed engine bugs (the first-player token, free Infiltrates, intrigue choices), which I fixed and then re-ran every agent against.</li>
+					<li><b>Search.</b> Information-set Monte Carlo Tree Search that re-deals every hidden card into a possible world for each simulation, with per-seat value vectors so four players can each search for their own gain. With 24 playouts per move it won 90% of games against three heuristic bots.</li>
+					<li><b>Learning from people.</b> A vision pipeline scans recorded tournament streams, reads the board and chat with OCR, and replays each game through the engine. Fitting the heuristic to those decisions raised its match with human moves from 31% to 36% on held-out games.</li>
+					<li><b>Self-play training.</b> A value network with an AWR policy, an AlphaZero-style network for the tree search, evolutionary tuning of the heuristic's weights, and finally a PPO network that learns per-situation corrections to the heuristic's move scores. Long runs train on GPU nodes of Georgia Tech's PACE cluster through Slurm.</li>
+					<li><b>Experiments, not guesses.</b> Every change is gated by seat-rotated arenas of hundreds to thousands of games with confidence ranges — for example, an expected-reward combat model beat the old deploy-everything rule 59% to 41% over 1,920 games.</li>
+					<li><b>Playable in a browser.</b> A web UI where you pick a seat and leader and play the AI; each AI move expands to show the options it weighed. Packaged with Docker for public hosting.</li>
+				</ul>
 				<div class="chip-row">
 					<span class="chip accent">Python</span>
-					<span class="chip">Reinforcement Learning</span>
+					<span class="chip">NumPy</span>
+					<span class="chip">PyTorch</span>
+					<span class="chip">PPO</span>
 					<span class="chip">MCTS</span>
-					<span class="chip">Imitation Learning</span>
-					<span class="chip">Computer Vision</span>
+					<span class="chip">AlphaZero</span>
+					<span class="chip">Evolutionary Search</span>
+					<span class="chip">Computer Vision / OCR</span>
+					<span class="chip">Slurm (PACE HPC)</span>
+					<span class="chip">Docker</span>
+				</div>
+				<div class="card-links">
+					<a href="https://github.com/AjinkyaA25/DUNE_AI" target="_blank" rel="noopener">Repo →</a>
 				</div>
 			</div>
 		</article>

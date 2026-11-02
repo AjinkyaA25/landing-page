@@ -380,3 +380,22 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 .social-icons a:hover { color: var(--accent); border-color: var(--accent); }
 .social-icons svg { width: 18px; height: 18px; }
 .footer-note { margin-top: 40px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-faint); }
+
+/* ---------- featured project ---------- */
+.project-card.featured { grid-column: 1 / -1; }
+.project-card.featured .card-photo { height: 240px; }
+.project-card.featured .card-body { padding: 28px 32px 30px; }
+.project-card.featured h3 { font-size: 1.35rem; }
+.project-card.featured > .card-body > p { font-size: 1rem; max-width: 78ch; }
+.project-card.featured h4 { font-size: 0.95rem; margin: 26px 0 10px; }
+.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 22px; }
+.stat { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); padding: 14px 16px; }
+.stat strong { display: block; font-family: var(--font-display); font-size: 1.7rem; color: var(--accent); line-height: 1.1; }
+.stat span { display: block; font-size: 0.8rem; color: var(--ink-muted); margin-top: 6px; line-height: 1.45; }
+.detail-list { margin: 0 0 18px; padding-left: 18px; display: grid; gap: 10px; max-width: 86ch; }
+.detail-list li { font-size: 0.93rem; color: var(--ink-muted); line-height: 1.55; }
+.detail-list b { color: var(--ink); font-weight: 600; }
+@media (max-width: 780px) {
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .project-card.featured .card-body { padding: 22px 20px 24px; }
+}
