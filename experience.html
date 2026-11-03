@@ -32,12 +32,38 @@
 		<div class="container">
 			<span class="eyebrow">Experience</span>
 			<h1>Where I've worked</h1>
-			<p class="lede">Two internships at The Home Depot, and a YouTube channel that's grown into its own small platform.</p>
+			<p class="lede">Research at Georgia Tech, two internships at The Home Depot, and a YouTube channel that's grown into its own small platform.</p>
 		</div>
 	</section>
 
 	<section class="spotlights">
 		<div class="container">
+
+			<div class="spot">
+				<div class="spot-media">
+					<img src="images/GT.png" alt="Georgia Tech" />
+				</div>
+				<div>
+					<span class="date-tag">August 2025 – Present</span>
+					<h3>Research Team Member — Georgia Tech VIP, Spatial Apps</h3>
+					<p>
+						I'm on a Vertically Integrated Projects research team building tools to understand and reduce urban heat.
+						My role is data collection for a multi-city SOLWEIG GPU effort: I gather elevation, LiDAR, land-cover, and
+						tree-canopy source data for New York City, Philadelphia, San Francisco, and Tucson. I also run SOLWEIG
+						thermal-comfort comparisons between its GPU and CPU implementations on Georgia Tech's PACE supercomputing
+						cluster, and contribute to the team's Cool Choices app — a React and Mapbox tool for placing trees on campus
+						and seeing how the thermal environment responds.
+					</p>
+					<div class="chip-row">
+						<span class="chip">SOLWEIG</span>
+						<span class="chip">HPC (PACE)</span>
+						<span class="chip">Geospatial Data</span>
+						<span class="chip">LiDAR</span>
+						<span class="chip">React</span>
+						<span class="chip">Mapbox</span>
+					</div>
+				</div>
+			</div>
 
 			<div class="spot">
 				<div class="spot-media">
@@ -48,11 +74,15 @@
 					<h3>Software Engineering Intern — The Home Depot</h3>
 					<p>
 						I returned to The Home Depot for a second Software Engineering internship, where I built
-						<strong>mPulse</strong>, a multi-agent pricing intelligence pipeline that helps pricing managers
-						understand Competitor Price Index (CPI) data in plain language instead of manual lookups. The system
-						is backed by a BigQuery-based competitive pricing SQL pipeline I designed to cover CPI metric
-						definitions and SKU-level data flows, translating raw pricing data into clear, actionable answers.
-						This deepened my ability to connect data engineering with multi-agent AI systems.
+						<strong>mPulse</strong>, a multi-agent pricing intelligence system that lets pricing managers ask
+						questions about Competitor Price Index (CPI) data in plain language instead of digging through manual
+						lookups. I built both the front end and the back end: four Gemini agents on Vertex AI work in
+						sequence — one expands short follow-ups like "Why?" into complete questions using the conversation so
+						far, one validates that a question is answerable from the data, one queries BigQuery, and one turns the
+						results into readable answers with charts and suggested follow-up questions. Underneath it sits a
+						BigQuery competitive pricing pipeline covering CPI metric definitions and SKU-level data flows. During
+						a pricing hackathon, I also contributed an output-formatting agent that produced structured JSON
+						responses and Plotly charts. This deepened my ability to connect data engineering with multi-agent AI systems.
 					</p>
 					<div class="chip-row">
 						<span class="chip">Google ADK</span>
@@ -60,6 +90,7 @@
 						<span class="chip">Gemini 2.5 Flash</span>
 						<span class="chip">BigQuery</span>
 						<span class="chip">SQL</span>
+						<span class="chip">Plotly</span>
 					</div>
 				</div>
 			</div>

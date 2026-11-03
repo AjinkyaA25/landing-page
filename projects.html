@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Projects — Ajinkya Argonda</title>
-	<meta name="description" content="Nine projects spanning GANs, NLP, reinforcement learning, mobile apps, and full-stack tools." />
+	<meta name="description" content="Twelve projects spanning reinforcement learning, NLP, GANs, abstract reasoning, geospatial modeling, and full-stack tools." />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,39 +32,65 @@
 		<div class="container">
 			<span class="eyebrow">Projects</span>
 			<h1>What I've built</h1>
-			<p class="lede">Class projects, personal builds, and tools for the Dune: Imperium community — most recent first.</p>
+			<p class="lede">Twelve projects across reinforcement learning, NLP, generative models, geospatial research, and full-stack apps.</p>
 		</div>
+	</section>
+
+	<section class="container section-head">
+		<h2>Featured</h2>
+		<p>My three strongest projects: reinforcement learning, information retrieval, and generative models.</p>
 	</section>
 
 	<section class="projects-grid container">
 
-		<article class="project-card">
-			<div class="card-photo"><img src="images/duneimg.png" alt="Dune Imperium Reinforcement Learning Engine" /></div>
+		<article class="project-card featured">
+			<div class="card-photo"><img src="images/duneimg.png" alt="Dune: Imperium Uprising board" /></div>
 			<div class="card-body">
 				<div class="card-head">
-					<h3>Dune Imperium Reinforcement Learning Engine</h3>
+					<h3>Dune AI — Self-Play Agents for Dune: Imperium Uprising</h3>
 				</div>
-				<span class="date-tag">2026 · Ongoing</span>
+				<span class="date-tag">2026 · Ongoing · Personal Project</span>
 				<p>
-					A Python reinforcement learning engine that plays Dune: Imperium Uprising: a full game-state orchestrator
-					modeling players, contracts, tech, and the spy system (with Bloodlines expansion rules encoded), an
-					MCTS-based decision engine combined with imitation learning, and a vision pipeline for extracting live
-					game state from screenshots and logs. I also used Python libraries to scrape and parse card text and
-					effects into a structured dataset the engine references when evaluating moves — applying classical AI
-					search and modern ML to a complex, rules-heavy game environment.
+					A complete AI system for a four-player strategy board game with hidden hands, shuffled decks, and dozens
+					of interacting card effects. I wrote the rules engine from scratch, built a ladder of increasingly strong
+					agents on top of it, and trained them through hundreds of thousands of self-play games — then built a
+					browser interface for playing against the strongest one and seeing why it made each move.
 				</p>
+				<div class="stat-row">
+					<div class="stat"><strong>67%</strong><span>win share for the PPO agent at a four-player table vs. three copies of the evolved heuristic (25% is even)</span></div>
+					<div class="stat"><strong>932k</strong><span>self-play games used to train the deployed PPO network</span></div>
+					<div class="stat"><strong>8,815</strong><span>human decisions extracted from 90 streamed games by computer vision</span></div>
+					<div class="stat"><strong>42k</strong><span>lines of Python, with 189 tests covering the rules engine</span></div>
+				</div>
+				<h4>How it works</h4>
+				<ul class="detail-list">
+					<li><b>Rules engine.</b> Full turn flow with the Bloodlines expansion: 9 leaders, all 59 Intrigue cards, CHOAM contracts, tech tiles, Sardaukar skills, and the spy system. Benchmarking exposed engine bugs (the first-player token, free Infiltrates, intrigue choices), which I fixed and then re-ran every agent against.</li>
+					<li><b>Search.</b> Information-set Monte Carlo Tree Search that re-deals every hidden card into a possible world for each simulation, with per-seat value vectors so four players can each search for their own gain. With 24 playouts per move it won 90% of games against three heuristic bots.</li>
+					<li><b>Learning from people.</b> A vision pipeline scans recorded tournament streams, reads the board and chat with OCR, and replays each game through the engine. Fitting the heuristic to those decisions raised its match with human moves from 31% to 36% on held-out games.</li>
+					<li><b>Self-play training.</b> A value network with an AWR policy, an AlphaZero-style network for the tree search, evolutionary tuning of the heuristic's weights, and finally a PPO network that learns per-situation corrections to the heuristic's move scores. Long runs train on GPU nodes of Georgia Tech's PACE cluster through Slurm.</li>
+					<li><b>Experiments, not guesses.</b> Every change is gated by seat-rotated arenas of hundreds to thousands of games with confidence ranges — for example, an expected-reward combat model beat the old deploy-everything rule 59% to 41% over 1,920 games.</li>
+					<li><b>Explainable play.</b> A browser interface where you pick a seat and leader and play the AI; every AI move expands to show the options it weighed and how it scored them.</li>
+				</ul>
 				<div class="chip-row">
 					<span class="chip accent">Python</span>
-					<span class="chip">Reinforcement Learning</span>
+					<span class="chip">NumPy</span>
+					<span class="chip">PyTorch</span>
+					<span class="chip">PPO</span>
 					<span class="chip">MCTS</span>
-					<span class="chip">Imitation Learning</span>
-					<span class="chip">Computer Vision</span>
+					<span class="chip">AlphaZero</span>
+					<span class="chip">Evolutionary Search</span>
+					<span class="chip">Computer Vision / OCR</span>
+					<span class="chip">Slurm (PACE HPC)</span>
+					<span class="chip">Docker</span>
+				</div>
+				<div class="card-links">
+					<a href="https://github.com/AjinkyaA25/DUNE_AI" target="_blank" rel="noopener">Repo →</a>
 				</div>
 			</div>
 		</article>
 
-		<article class="project-card">
-			<div class="card-photo placeholder"><span>LB</span></div>
+		<article class="project-card highlight">
+			<div class="card-photo"><img src="images/covers/lexbert.svg" alt="Search query with ranked passages" /></div>
 			<div class="card-body">
 				<div class="card-head">
 					<h3>LexBERT</h3>
@@ -76,6 +102,11 @@
 					by relevance. Benchmarked against baseline BERT and SBERT using MRR, Recall, and Precision — LexBERT
 					outperformed both across every evaluation, reaching up to 0.82 MRR versus 0.59 (BERT) and 0.71 (SBERT).
 				</p>
+				<div class="stat-row compact">
+					<div class="stat"><strong>0.82</strong><span>MRR for LexBERT</span></div>
+					<div class="stat"><strong>0.71</strong><span>SBERT baseline</span></div>
+					<div class="stat"><strong>0.59</strong><span>BERT baseline</span></div>
+				</div>
 				<div class="chip-row">
 					<span class="chip accent">Python</span>
 					<span class="chip">PyTorch</span>
@@ -89,8 +120,8 @@
 			</div>
 		</article>
 
-		<article class="project-card">
-			<div class="card-photo placeholder"><span>iG</span></div>
+		<article class="project-card highlight">
+			<div class="card-photo"><img src="images/covers/invisigan.svg" alt="Handwritten digit with hidden binary message" /></div>
 			<div class="card-body">
 				<div class="card-head">
 					<h3>invisiGAN</h3>
@@ -102,6 +133,11 @@
 					steganographic (SteganoGAN) architectures to inform the generator, discriminator, and decoder design;
 					trained the baseline model; extended evaluation to CIFAR-10; and built the project's GitHub Pages site.
 				</p>
+				<div class="stat-row compact">
+					<div class="stat"><strong>5</strong><span>person research team</span></div>
+					<div class="stat"><strong>3</strong><span>datasets: MNIST, EMNIST, CIFAR-10</span></div>
+					<div class="stat"><strong>cGAN</strong><span>generator, discriminator, and decoder</span></div>
+				</div>
 				<div class="chip-row">
 					<span class="chip accent">Python</span>
 					<span class="chip">PyTorch</span>
@@ -115,34 +151,66 @@
 			</div>
 		</article>
 
+	</section>
+
+	<section class="container section-head">
+		<h2>More projects</h2>
+		<p>Research, class, and personal builds — most recent first.</p>
+	</section>
+
+	<section class="projects-grid container">
+
 		<article class="project-card">
-			<div class="card-photo"><img src="images/dune_imperium_tourney.png" alt="The Colosseum" /></div>
+			<div class="card-photo"><img src="images/covers/arc.svg" alt="Abstract reasoning puzzle grids" /></div>
 			<div class="card-body">
 				<div class="card-head">
-					<h3>The Colosseum</h3>
+					<h3>ARC Prize Agent</h3>
 				</div>
+				<span class="date-tag">August 2026 – Present · Class Project</span>
 				<p>
-					A full tournament management web app for The Colosseum, a 64-player Dune: Imperium tournament I
-					organized. Features a spinning-wheel draft system, live group standings, a knockout-stage randomizer,
-					password-protected result entry, and XLSX export for tournament records — end-to-end ownership of a
-					production-style app, from UI/UX to data export and access control.
+					For Georgia Tech's Knowledge-Based AI course, I'm building an agent for the ARC Prize challenge: abstract
+					visual reasoning puzzles where the agent sees a few input/output grid examples and must infer the
+					transformation rule for a new grid. Each version is scored on a Gradescope leaderboard, and I document
+					the agent's design and results in milestone reports written in the Advances in Cognitive Systems format.
 				</p>
 				<div class="chip-row">
-					<span class="chip accent">React</span>
-					<span class="chip">TypeScript</span>
-				</div>
-				<div class="card-links">
-					<a href="https://github.com/AjinkyaA25/duneTournament" target="_blank" rel="noopener">Repo →</a>
+					<span class="chip accent">Python</span>
+					<span class="chip">Knowledge-Based AI</span>
+					<span class="chip">Abstract Reasoning</span>
+					<span class="chip">Research Writing</span>
 				</div>
 			</div>
 		</article>
-
+		<article class="project-card">
+			<div class="card-photo"><img src="images/covers/cool-choices.svg" alt="Heat map with trees" /></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>Cool Choices — Campus Heat Explorer</h3>
+				</div>
+				<span class="date-tag">August 2025 – Present · Team Project (VIP)</span>
+				<p>
+					A React and Mapbox web app where users place trees on Georgia Tech's campus and see how the thermal
+					environment responds, powered by the SOLWEIG urban thermal-comfort model. I prototyped the app's
+					localized recalculation, Run Analysis progress flow, and scenario save/export in Figma,
+					building on the team's server that runs the SOLWEIG model.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">React</span>
+					<span class="chip">Mapbox</span>
+					<span class="chip">SOLWEIG</span>
+					<span class="chip">HPC (PACE)</span>
+					<span class="chip">Figma</span>
+					<span class="chip">Geospatial Data</span>
+				</div>
+			</div>
+		</article>
 		<article class="project-card">
 			<div class="card-photo"><img src="images/dune_uprising.png" alt="Dune Tournament Discord Bot" /></div>
 			<div class="card-body">
 				<div class="card-head">
-					<h3>Dune Tournament Discord Bot</h3>
+					<h3>Spartacus — Dune Tournament Discord Bot</h3>
 				</div>
+				<span class="date-tag">August 2026 – September 2026 · Personal Project</span>
 				<p>
 					A Python Discord bot that ran a large-scale Dune: Imperium Uprising online tournament — named houses,
 					combinatorial group-stage scheduling, and availability-aware bin-packing to fairly assign match times.
@@ -158,7 +226,28 @@
 				</div>
 			</div>
 		</article>
-
+		<article class="project-card">
+			<div class="card-photo"><img src="images/dune_imperium_tourney.png" alt="The Colosseum" /></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>The Colosseum</h3>
+				</div>
+				<span class="date-tag">Personal Project</span>
+				<p>
+					A full tournament management web app for The Colosseum, a 64-player Dune: Imperium tournament I
+					organized. Features a spinning-wheel draft system, live group standings, a knockout-stage randomizer,
+					password-protected result entry, and XLSX export for tournament records — end-to-end ownership of a
+					production-style app, from UI/UX to data export and access control.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">React</span>
+					<span class="chip">TypeScript</span>
+				</div>
+				<div class="card-links">
+					<a href="https://github.com/AjinkyaA25/duneTournament" target="_blank" rel="noopener">Repo →</a>
+				</div>
+			</div>
+		</article>
 		<article class="project-card">
 			<div class="card-photo"><img src="images/wandersync.jpg" alt="WanderSync" /></div>
 			<div class="card-body">
@@ -180,7 +269,25 @@
 				</div>
 			</div>
 		</article>
-
+		<article class="project-card">
+			<div class="card-photo"><img src="images/covers/c-game.svg" alt="Memory blocks and a pointer" /></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>Ship Game in C</h3>
+				</div>
+				<span class="date-tag">2024 · Class Project</span>
+				<p>
+					A ship-based game written in C for my Computer Organization course, built on my own structs, pointer-based
+					data structures, and manual memory management — no libraries doing the bookkeeping for me. It's where
+					I learned how the code I write actually maps onto memory and the machine underneath.
+				</p>
+				<div class="chip-row">
+					<span class="chip accent">C</span>
+					<span class="chip">Data Structures</span>
+					<span class="chip">Memory Management</span>
+				</div>
+			</div>
+		</article>
 		<article class="project-card">
 			<div class="card-photo"><img src="images/chesswin.png" alt="Chess Engine" /></div>
 			<div class="card-body">
@@ -201,7 +308,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/housingimage.jpg" alt="House Price Estimator" /></div>
 			<div class="card-body">
@@ -221,7 +327,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/soccer.jpg" alt="Football Weather API" /></div>
 			<div class="card-body">
