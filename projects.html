@@ -32,8 +32,13 @@
 		<div class="container">
 			<span class="eyebrow">Projects</span>
 			<h1>What I've built</h1>
-			<p class="lede">Class projects, personal builds, and tools for the Dune: Imperium community — most recent first.</p>
+			<p class="lede">Twelve projects across reinforcement learning, NLP, generative models, geospatial research, and full-stack apps.</p>
 		</div>
+	</section>
+
+	<section class="container section-head">
+		<h2>Featured</h2>
+		<p>My three strongest projects: reinforcement learning, information retrieval, and generative models.</p>
 	</section>
 
 	<section class="projects-grid container">
@@ -48,8 +53,8 @@
 				<p>
 					A complete AI system for a four-player strategy board game with hidden hands, shuffled decks, and dozens
 					of interacting card effects. I wrote the rules engine from scratch, built a ladder of increasingly strong
-					agents on top of it, and trained them through hundreds of thousands of self-play games — then put the
-					strongest one in a browser so people can play against it and see why it made each move.
+					agents on top of it, and trained them through hundreds of thousands of self-play games — then built a
+					browser interface for playing against the strongest one and seeing why it made each move.
 				</p>
 				<div class="stat-row">
 					<div class="stat"><strong>67%</strong><span>win share for the PPO agent at a four-player table vs. three copies of the evolved heuristic (25% is even)</span></div>
@@ -64,7 +69,7 @@
 					<li><b>Learning from people.</b> A vision pipeline scans recorded tournament streams, reads the board and chat with OCR, and replays each game through the engine. Fitting the heuristic to those decisions raised its match with human moves from 31% to 36% on held-out games.</li>
 					<li><b>Self-play training.</b> A value network with an AWR policy, an AlphaZero-style network for the tree search, evolutionary tuning of the heuristic's weights, and finally a PPO network that learns per-situation corrections to the heuristic's move scores. Long runs train on GPU nodes of Georgia Tech's PACE cluster through Slurm.</li>
 					<li><b>Experiments, not guesses.</b> Every change is gated by seat-rotated arenas of hundreds to thousands of games with confidence ranges — for example, an expected-reward combat model beat the old deploy-everything rule 59% to 41% over 1,920 games.</li>
-					<li><b>Playable in a browser.</b> A web UI where you pick a seat and leader and play the AI; each AI move expands to show the options it weighed. Packaged with Docker for public hosting.</li>
+					<li><b>Explainable play.</b> A browser interface where you pick a seat and leader and play the AI; every AI move expands to show the options it weighed and how it scored them.</li>
 				</ul>
 				<div class="chip-row">
 					<span class="chip accent">Python</span>
@@ -84,8 +89,79 @@
 			</div>
 		</article>
 
+		<article class="project-card highlight">
+			<div class="card-photo"><img src="images/covers/lexbert.svg" alt="Search query with ranked passages" /></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>LexBERT</h3>
+				</div>
+				<span class="date-tag">January 2026 – May 2026 · Class Project</span>
+				<p>
+					Built and evaluated LexBERT, a BERT-based passage-ranking model that augments transformer embeddings
+					with lexical features (TF-IDF, Jaccard similarity, query term density) to rank MS MARCO search passages
+					by relevance. Benchmarked against baseline BERT and SBERT using MRR, Recall, and Precision — LexBERT
+					outperformed both across every evaluation, reaching up to 0.82 MRR versus 0.59 (BERT) and 0.71 (SBERT).
+				</p>
+				<div class="stat-row compact">
+					<div class="stat"><strong>0.82</strong><span>MRR for LexBERT</span></div>
+					<div class="stat"><strong>0.71</strong><span>SBERT baseline</span></div>
+					<div class="stat"><strong>0.59</strong><span>BERT baseline</span></div>
+				</div>
+				<div class="chip-row">
+					<span class="chip accent">Python</span>
+					<span class="chip">PyTorch</span>
+					<span class="chip">Hugging Face Transformers</span>
+					<span class="chip">NLP</span>
+					<span class="chip">Information Retrieval</span>
+				</div>
+				<div class="card-links">
+					<a href="https://github.com/n-m-gitrepos/nlp_proj_final" target="_blank" rel="noopener">Repo →</a>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card highlight">
+			<div class="card-photo"><img src="images/covers/invisigan.svg" alt="Handwritten digit with hidden binary message" /></div>
+			<div class="card-body">
+				<div class="card-head">
+					<h3>invisiGAN</h3>
+				</div>
+				<span class="date-tag">August 2025 – December 2025 · Class Project</span>
+				<p>
+					Collaborated on a 5-person team to build invisiGAN, a conditional GAN in PyTorch that embeds
+					imperceptible binary messages into generated images (MNIST/EMNIST). I researched conditional-GAN and
+					steganographic (SteganoGAN) architectures to inform the generator, discriminator, and decoder design;
+					trained the baseline model; extended evaluation to CIFAR-10; and built the project's GitHub Pages site.
+				</p>
+				<div class="stat-row compact">
+					<div class="stat"><strong>5</strong><span>person research team</span></div>
+					<div class="stat"><strong>3</strong><span>datasets: MNIST, EMNIST, CIFAR-10</span></div>
+					<div class="stat"><strong>cGAN</strong><span>generator, discriminator, and decoder</span></div>
+				</div>
+				<div class="chip-row">
+					<span class="chip accent">Python</span>
+					<span class="chip">PyTorch</span>
+					<span class="chip">GANs</span>
+					<span class="chip">Computer Vision</span>
+					<span class="chip">Steganography</span>
+				</div>
+				<div class="card-links">
+					<a href="https://github.gatech.edu/pages/jmaayah3/invisiGAN/" target="_blank" rel="noopener">Write-up →</a>
+				</div>
+			</div>
+		</article>
+
+	</section>
+
+	<section class="container section-head">
+		<h2>More projects</h2>
+		<p>Research, class, and personal builds — most recent first.</p>
+	</section>
+
+	<section class="projects-grid container">
+
 		<article class="project-card">
-			<div class="card-photo placeholder"><span>ARC</span></div>
+			<div class="card-photo"><img src="images/covers/arc.svg" alt="Abstract reasoning puzzle grids" /></div>
 			<div class="card-body">
 				<div class="card-head">
 					<h3>ARC Prize Agent</h3>
@@ -105,9 +181,8 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
-			<div class="card-photo placeholder"><span>CC</span></div>
+			<div class="card-photo"><img src="images/covers/cool-choices.svg" alt="Heat map with trees" /></div>
 			<div class="card-body">
 				<div class="card-head">
 					<h3>Cool Choices — Campus Heat Explorer</h3>
@@ -129,7 +204,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/dune_uprising.png" alt="Dune Tournament Discord Bot" /></div>
 			<div class="card-body">
@@ -152,59 +226,6 @@
 				</div>
 			</div>
 		</article>
-
-		<article class="project-card">
-			<div class="card-photo placeholder"><span>LB</span></div>
-			<div class="card-body">
-				<div class="card-head">
-					<h3>LexBERT</h3>
-				</div>
-				<span class="date-tag">January 2026 – May 2026 · Class Project</span>
-				<p>
-					Built and evaluated LexBERT, a BERT-based passage-ranking model that augments transformer embeddings
-					with lexical features (TF-IDF, Jaccard similarity, query term density) to rank MS MARCO search passages
-					by relevance. Benchmarked against baseline BERT and SBERT using MRR, Recall, and Precision — LexBERT
-					outperformed both across every evaluation, reaching up to 0.82 MRR versus 0.59 (BERT) and 0.71 (SBERT).
-				</p>
-				<div class="chip-row">
-					<span class="chip accent">Python</span>
-					<span class="chip">PyTorch</span>
-					<span class="chip">Hugging Face Transformers</span>
-					<span class="chip">NLP</span>
-					<span class="chip">Information Retrieval</span>
-				</div>
-				<div class="card-links">
-					<a href="https://github.com/n-m-gitrepos/nlp_proj_final" target="_blank" rel="noopener">Repo →</a>
-				</div>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<div class="card-photo placeholder"><span>iG</span></div>
-			<div class="card-body">
-				<div class="card-head">
-					<h3>invisiGAN</h3>
-				</div>
-				<span class="date-tag">August 2025 – December 2025 · Class Project</span>
-				<p>
-					Collaborated on a 5-person team to build invisiGAN, a conditional GAN in PyTorch that embeds
-					imperceptible binary messages into generated images (MNIST/EMNIST). I researched conditional-GAN and
-					steganographic (SteganoGAN) architectures to inform the generator, discriminator, and decoder design;
-					trained the baseline model; extended evaluation to CIFAR-10; and built the project's GitHub Pages site.
-				</p>
-				<div class="chip-row">
-					<span class="chip accent">Python</span>
-					<span class="chip">PyTorch</span>
-					<span class="chip">GANs</span>
-					<span class="chip">Computer Vision</span>
-					<span class="chip">Steganography</span>
-				</div>
-				<div class="card-links">
-					<a href="https://github.gatech.edu/pages/jmaayah3/invisiGAN/" target="_blank" rel="noopener">Write-up →</a>
-				</div>
-			</div>
-		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/dune_imperium_tourney.png" alt="The Colosseum" /></div>
 			<div class="card-body">
@@ -227,7 +248,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/wandersync.jpg" alt="WanderSync" /></div>
 			<div class="card-body">
@@ -249,9 +269,8 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
-			<div class="card-photo placeholder"><span>C</span></div>
+			<div class="card-photo"><img src="images/covers/c-game.svg" alt="Memory blocks and a pointer" /></div>
 			<div class="card-body">
 				<div class="card-head">
 					<h3>Ship Game in C</h3>
@@ -269,7 +288,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/chesswin.png" alt="Chess Engine" /></div>
 			<div class="card-body">
@@ -290,7 +308,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/housingimage.jpg" alt="House Price Estimator" /></div>
 			<div class="card-body">
@@ -310,7 +327,6 @@
 				</div>
 			</div>
 		</article>
-
 		<article class="project-card">
 			<div class="card-photo"><img src="images/soccer.jpg" alt="Football Weather API" /></div>
 			<div class="card-body">

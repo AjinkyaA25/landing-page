@@ -399,3 +399,18 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   .stat-row { grid-template-columns: repeat(2, 1fr); }
   .project-card.featured .card-body { padding: 22px 20px 24px; }
 }
+
+/* ---------- project sections ---------- */
+.section-head { padding-top: 8px; padding-bottom: 18px; }
+.section-head h2 { font-size: 1.25rem; margin: 0 0 4px; }
+.section-head p { color: var(--ink-faint); font-size: 0.9rem; margin: 0; }
+.projects-grid + .section-head { padding-top: 0; }
+.project-card.highlight .card-photo { height: 190px; }
+.stat-row.compact { grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 18px 0 2px; }
+.stat-row.compact .stat { padding: 10px 12px; }
+.stat-row.compact .stat strong { font-size: 1.35rem; }
+.stat-row.compact .stat span { font-size: 0.76rem; margin-top: 4px; }
+.project-card .chip-row { margin-top: 16px; }
+.project-card .card-links { margin-top: auto; padding-top: 16px; }
+.card-photo img[src*="covers/"] { object-fit: contain; background: #0E1730; }
+.skill-chips .chip { max-width: 100%; white-space: normal; }
